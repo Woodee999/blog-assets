@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Windows Server 설치 선택 중 되돌릴 수 없는 항목과 되돌릴 수 있는 항목">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="30" y="36" font-size="20" font-weight="700" fill="#1A202C">설치 시점에 확정해야 하는 선택</text>
+
+    <rect x="30" y="66" width="360" height="270" rx="10" fill="#ffffff" stroke="#243B55" stroke-width="3"/>
+    <text x="50" y="100" font-size="16" font-weight="700" fill="#243B55">되돌릴 수 없음 · 재설치 필요</text>
+    <line x1="50" y1="114" x2="370" y2="114" stroke="#243B55" stroke-width="1.5"/>
+    <text x="50" y="148" font-size="14" fill="#1A202C">· 설치 옵션</text>
+    <text x="64" y="172" font-size="13" fill="#4A5568">Server Core ↔ 데스크톱 환경 전환 불가</text>
+    <text x="50" y="206" font-size="14" fill="#1A202C">· 에디션 하향</text>
+    <text x="64" y="230" font-size="13" fill="#4A5568">Datacenter → Standard 불가</text>
+    <text x="50" y="264" font-size="14" fill="#1A202C">· 평가판 도메인 컨트롤러</text>
+    <text x="64" y="288" font-size="13" fill="#4A5568">승격 후 소매 버전 전환 불가</text>
+    <text x="64" y="312" font-size="13" fill="#4A5568">역할 이관 후 재구축이 유일한 경로</text>
+
+    <rect x="410" y="66" width="360" height="270" rx="10" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="430" y="100" font-size="16" font-weight="700" fill="#475569">설치 후 변경 가능</text>
+    <line x1="430" y1="114" x2="750" y2="114" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="430" y="148" font-size="14" fill="#1A202C">· 에디션 상향</text>
+    <text x="444" y="172" font-size="13" fill="#4A5568">Standard → Datacenter 언제든 가능</text>
+    <text x="430" y="206" font-size="14" fill="#1A202C">· 라이선스 형태</text>
+    <text x="444" y="230" font-size="13" fill="#4A5568">소매 ↔ 볼륨 ↔ OEM (에디션 유지)</text>
+    <text x="430" y="264" font-size="14" fill="#1A202C">· 기본 구성</text>
+    <text x="444" y="288" font-size="13" fill="#4A5568">컴퓨터 이름, 시간대, 역할과 기능</text>
+    <text x="444" y="312" font-size="13" fill="#4A5568">단, 이름은 도메인 조인 전에 확정</text>
+
+    <rect x="30" y="366" width="740" height="56" rx="8" fill="#ffffff" stroke="#243B55" stroke-width="2.5"/>
+    <text x="50" y="400" font-size="15" font-weight="700" fill="#243B55">왼쪽 열의 세 항목은 설치 화면을 넘기기 전에 결정해야 합니다</text>
+  </g>
+</svg>

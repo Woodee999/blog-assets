@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="다운로드 경로에 따른 인터넷 영역 표시와 실행 차단 결과">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="p2" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#4A5568"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="30" y="36" font-size="20" font-weight="700" fill="#1A202C">RemoteSigned 환경에서 같은 스크립트, 다른 결과</text>
+
+    <rect x="40" y="66" width="340" height="56" rx="8" fill="#ffffff" stroke="#2E2A56" stroke-width="2.5"/>
+    <text x="60" y="100" font-size="15" font-weight="700" fill="#1A202C">브라우저로 다운로드</text>
+
+    <rect x="420" y="66" width="340" height="56" rx="8" fill="#ffffff" stroke="#2E2A56" stroke-width="2.5"/>
+    <text x="440" y="100" font-size="15" font-weight="700" fill="#1A202C">curl.exe · Invoke-WebRequest</text>
+
+    <line x1="210" y1="126" x2="210" y2="158" stroke="#4A5568" stroke-width="2" marker-end="url(#p2)"/>
+    <line x1="590" y1="126" x2="590" y2="158" stroke="#4A5568" stroke-width="2" marker-end="url(#p2)"/>
+
+    <rect x="40" y="162" width="340" height="56" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="60" y="196" font-size="14" fill="#1A202C">인터넷 영역 표시가 붙습니다</text>
+
+    <rect x="420" y="162" width="340" height="56" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="440" y="196" font-size="14" fill="#1A202C">표시가 붙지 않습니다</text>
+
+    <line x1="210" y1="222" x2="210" y2="254" stroke="#4A5568" stroke-width="2" marker-end="url(#p2)"/>
+    <line x1="590" y1="222" x2="590" y2="254" stroke="#4A5568" stroke-width="2" marker-end="url(#p2)"/>
+
+    <rect x="40" y="258" width="340" height="76" rx="8" fill="#ffffff" stroke="#2E2A56" stroke-width="2.5"/>
+    <text x="60" y="288" font-size="14" font-weight="700" fill="#1A202C">실행 차단</text>
+    <text x="60" y="314" font-size="13" fill="#4A5568">Unblock-File 로 표시 제거 후 실행</text>
+
+    <rect x="420" y="258" width="340" height="76" rx="8" fill="#ffffff" stroke="#2E2A56" stroke-width="2.5"/>
+    <text x="440" y="288" font-size="14" font-weight="700" fill="#1A202C">그대로 실행</text>
+    <text x="440" y="314" font-size="13" fill="#4A5568">서명이 없어도 차단되지 않습니다</text>
+
+    <rect x="40" y="360" width="720" height="62" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="60" y="392" font-size="14" font-weight="700" fill="#1A202C">차단 여부는 스크립트의 안전성과 무관합니다. 내용 검토를 대체하지 않습니다.</text>
+  </g>
+</svg>

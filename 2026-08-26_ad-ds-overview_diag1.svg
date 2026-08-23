@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="AD DS 논리 구조와 클라이언트 인증 경로">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="d1" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#2E4A38"/></marker>
+  <marker id="d1b" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#4A5568"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="30" y="34" font-size="20" font-weight="700" fill="#1A202C">AD DS 논리 구조</text>
+
+    <rect x="24" y="150" width="150" height="80" rx="8" fill="#ffffff" stroke="#4A5568" stroke-width="2"/>
+    <text x="42" y="182" font-size="14" font-weight="700" fill="#1A202C">도메인 가입</text>
+    <text x="42" y="206" font-size="14" font-weight="700" fill="#1A202C">클라이언트</text>
+
+    <line x1="178" y1="190" x2="246" y2="190" stroke="#2E4A38" stroke-width="2" marker-end="url(#d1)"/>
+    <text x="150" y="258" font-size="12" fill="#2E4A38">DNS 53</text>
+    <text x="150" y="278" font-size="12" fill="#2E4A38">Kerberos 88</text>
+    <text x="150" y="298" font-size="12" fill="#2E4A38">LDAP 389</text>
+
+    <rect x="250" y="60" width="520" height="330" rx="10" fill="#ffffff" stroke="#2E4A38" stroke-width="3"/>
+    <text x="270" y="90" font-size="16" font-weight="700" fill="#2E4A38">포리스트 · 스키마와 신뢰의 경계</text>
+
+    <rect x="272" y="105" width="476" height="205" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="290" y="132" font-size="14" font-weight="700" fill="#334155">도메인 · corp.example.com</text>
+
+    <rect x="300" y="145" width="150" height="48" rx="6" fill="#ffffff" stroke="#2E4A38" stroke-width="2"/>
+    <text x="318" y="175" font-size="14" font-weight="700" fill="#1A202C">도메인 컨트롤러 1</text>
+
+    <rect x="560" y="145" width="150" height="48" rx="6" fill="#ffffff" stroke="#2E4A38" stroke-width="2"/>
+    <text x="578" y="175" font-size="14" font-weight="700" fill="#1A202C">도메인 컨트롤러 2</text>
+
+    <line x1="456" y1="169" x2="554" y2="169" stroke="#4A5568" stroke-width="2" marker-end="url(#d1b)"/>
+    <text x="472" y="160" font-size="12" fill="#4A5568">복제 · RPC</text>
+
+    <rect x="300" y="220" width="128" height="52" rx="6" fill="#ffffff" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="318" y="252" font-size="13" fill="#1A202C">OU · 본사</text>
+
+    <rect x="446" y="220" width="128" height="52" rx="6" fill="#ffffff" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="464" y="252" font-size="13" fill="#1A202C">OU · 지사</text>
+
+    <rect x="592" y="220" width="128" height="52" rx="6" fill="#ffffff" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="610" y="252" font-size="13" fill="#1A202C">OU · 서버</text>
+
+    <text x="290" y="292" font-size="12" fill="#64748B">OU = 관리 위임과 그룹 정책 적용 단위</text>
+
+    <text x="272" y="340" font-size="14" font-weight="700" fill="#2E4A38">사이트</text>
+    <text x="272" y="366" font-size="13" fill="#334155">물리 네트워크 위치를 표현하며 복제 경로와 인증 대상 DC 선택에 영향을 줍니다</text>
+
+    <text x="24" y="424" font-size="14" font-weight="700" fill="#2E4A38">조직도는 OU로 표현하고, 포리스트는 격리 요구가 있을 때만 나눕니다</text>
+  </g>
+</svg>

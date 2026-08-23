@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="도메인 컨트롤러 배치 권장 구성과 지양 구성 비교">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="d2" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#4A5568"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="30" y="34" font-size="20" font-weight="700" fill="#1A202C">도메인 컨트롤러 배치 — 소규모 기준</text>
+
+    <rect x="30" y="60" width="360" height="290" rx="10" fill="#ffffff" stroke="#2E4A38" stroke-width="3"/>
+    <text x="50" y="92" font-size="16" font-weight="700" fill="#2E4A38">권장 · 호스트 분리 2대</text>
+
+    <rect x="52" y="112" width="150" height="66" rx="6" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="68" y="138" font-size="13" fill="#334155">가상화 호스트 A</text>
+    <rect x="66" y="146" width="122" height="24" rx="4" fill="#ffffff" stroke="#2E4A38" stroke-width="2"/>
+    <text x="80" y="163" font-size="12" font-weight="700" fill="#1A202C">DC 1</text>
+
+    <rect x="218" y="112" width="150" height="66" rx="6" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="234" y="138" font-size="13" fill="#334155">가상화 호스트 B</text>
+    <rect x="232" y="146" width="122" height="24" rx="4" fill="#ffffff" stroke="#2E4A38" stroke-width="2"/>
+    <text x="246" y="163" font-size="12" font-weight="700" fill="#1A202C">DC 2</text>
+
+    <line x1="192" y1="200" x2="228" y2="200" stroke="#4A5568" stroke-width="2" marker-end="url(#d2)"/>
+    <text x="146" y="222" font-size="12" fill="#4A5568">복제 · RPC</text>
+
+    <text x="52" y="262" font-size="14" fill="#1A202C">· 패치 재부팅 중에도 인증 유지</text>
+    <text x="52" y="290" font-size="14" fill="#1A202C">· 호스트 1대 장애가 전체 중단으로</text>
+    <text x="66" y="312" font-size="14" fill="#1A202C">이어지지 않습니다</text>
+
+    <rect x="410" y="60" width="360" height="290" rx="10" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="430" y="92" font-size="16" font-weight="700" fill="#475569">지양 · 단일 DC</text>
+
+    <rect x="432" y="112" width="150" height="66" rx="6" fill="#ffffff" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="448" y="138" font-size="13" fill="#334155">가상화 호스트 A</text>
+    <rect x="446" y="146" width="122" height="24" rx="4" fill="#ffffff" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="460" y="163" font-size="12" font-weight="700" fill="#1A202C">DC 1</text>
+
+    <text x="432" y="234" font-size="14" fill="#1A202C">· 재부팅 = 로그온 중단</text>
+    <text x="432" y="262" font-size="14" fill="#1A202C">· 그룹 정책 적용 중단</text>
+    <text x="432" y="290" font-size="14" fill="#1A202C">· 도메인 자원 접근 판단 불가</text>
+    <text x="432" y="318" font-size="14" fill="#1A202C">· 복구 시 백업 의존</text>
+
+    <rect x="30" y="374" width="740" height="52" rx="8" fill="#ffffff" stroke="#2E4A38" stroke-width="2.5"/>
+    <text x="50" y="406" font-size="15" font-weight="700" fill="#2E4A38">도메인 컨트롤러는 역할이 아니라 기반 시설로 다룹니다</text>
+  </g>
+</svg>

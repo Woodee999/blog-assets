@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="실행 정책 범위 우선순위와 유효 정책 결정 과정">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="p1" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#2E2A56"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="30" y="36" font-size="20" font-weight="700" fill="#1A202C">실행 정책 범위 우선순위</text>
+
+    <rect x="30" y="62" width="500" height="46" rx="6" fill="#ffffff" stroke="#2E2A56" stroke-width="2.5"/>
+    <text x="48" y="91" font-size="15" font-weight="700" fill="#2E2A56">1</text>
+    <text x="80" y="91" font-size="15" font-weight="700" fill="#1A202C">MachinePolicy</text>
+    <text x="270" y="91" font-size="13" fill="#4A5568">그룹 정책 · 컴퓨터 단위</text>
+
+    <rect x="30" y="120" width="500" height="46" rx="6" fill="#ffffff" stroke="#2E2A56" stroke-width="2.5"/>
+    <text x="48" y="149" font-size="15" font-weight="700" fill="#2E2A56">2</text>
+    <text x="80" y="149" font-size="15" font-weight="700" fill="#1A202C">UserPolicy</text>
+    <text x="270" y="149" font-size="13" fill="#4A5568">그룹 정책 · 사용자 단위</text>
+
+    <rect x="30" y="178" width="500" height="46" rx="6" fill="#ffffff" stroke="#2E2A56" stroke-width="2.5"/>
+    <text x="48" y="207" font-size="15" font-weight="700" fill="#2E2A56">3</text>
+    <text x="80" y="207" font-size="15" font-weight="700" fill="#1A202C">Process</text>
+    <text x="270" y="207" font-size="13" fill="#4A5568">현재 세션에만 적용</text>
+
+    <rect x="30" y="236" width="500" height="46" rx="6" fill="#ffffff" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="48" y="265" font-size="15" font-weight="700" fill="#64748B">4</text>
+    <text x="80" y="265" font-size="15" font-weight="700" fill="#1A202C">CurrentUser</text>
+    <text x="270" y="265" font-size="13" fill="#4A5568">현재 사용자 구성 파일</text>
+
+    <rect x="30" y="294" width="500" height="46" rx="6" fill="#ffffff" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="48" y="323" font-size="15" font-weight="700" fill="#64748B">5</text>
+    <text x="80" y="323" font-size="15" font-weight="700" fill="#1A202C">LocalMachine</text>
+    <text x="270" y="323" font-size="13" fill="#4A5568">모든 사용자 구성 파일 · 관리자 권한 필요</text>
+
+    <line x1="560" y1="70" x2="560" y2="332" stroke="#2E2A56" stroke-width="2" marker-end="url(#p1)"/>
+    <text x="578" y="180" font-size="13" fill="#2E2A56">해당 범위가</text>
+    <text x="578" y="202" font-size="13" fill="#2E2A56">Undefined 이면</text>
+    <text x="578" y="224" font-size="13" fill="#2E2A56">다음 순위로 내려갑니다</text>
+
+    <rect x="30" y="368" width="740" height="56" rx="8" fill="#ffffff" stroke="#2E2A56" stroke-width="2.5"/>
+    <text x="50" y="402" font-size="15" font-weight="700" fill="#2E2A56">가장 먼저 만나는 Undefined 아닌 값이 유효 정책이 됩니다</text>
+  </g>
+</svg>
