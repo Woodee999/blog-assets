@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="로그 수집 경로와 사용 포트">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="lg" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#4A1E38"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="24" y="34" font-size="20" font-weight="700" fill="#1A202C">로그 수집 경로</text>
+
+    <rect x="24" y="80" width="200" height="150" rx="8" fill="#ffffff" stroke="#4A1E38" stroke-width="2.5"/>
+    <text x="44" y="110" font-size="15" font-weight="700" fill="#4A1E38">원본 서버</text>
+    <text x="44" y="140" font-size="13" fill="#1A202C">도메인 컨트롤러</text>
+    <text x="44" y="164" font-size="13" fill="#1A202C">노출 서버</text>
+    <text x="44" y="188" font-size="13" fill="#1A202C">파일 서버</text>
+    <text x="44" y="214" font-size="12" fill="#64748B">로컬 로그 = 완충 장치</text>
+
+    <line x1="228" y1="155" x2="296" y2="155" stroke="#4A1E38" stroke-width="2" marker-end="url(#lg)"/>
+    <text x="228" y="264" font-size="12" fill="#4A1E38">WinRM</text>
+    <text x="228" y="284" font-size="12" fill="#4A1E38">5985 / 5986</text>
+
+    <rect x="300" y="80" width="200" height="150" rx="8" fill="#ffffff" stroke="#4A1E38" stroke-width="2.5"/>
+    <text x="320" y="110" font-size="15" font-weight="700" fill="#4A1E38">수집 서버</text>
+    <text x="320" y="140" font-size="13" fill="#1A202C">이벤트 전달 구독</text>
+    <text x="320" y="164" font-size="13" fill="#1A202C">정규화 · 필터</text>
+    <text x="320" y="188" font-size="13" fill="#1A202C">경보 규칙 적용</text>
+    <text x="320" y="214" font-size="12" fill="#64748B">오탐 튜닝이 일어나는 지점</text>
+
+    <line x1="504" y1="155" x2="572" y2="155" stroke="#4A1E38" stroke-width="2" marker-end="url(#lg)"/>
+    <text x="506" y="264" font-size="12" fill="#4A1E38">플랫폼별</text>
+    <text x="506" y="284" font-size="12" fill="#4A1E38">전송 포트</text>
+
+    <rect x="576" y="80" width="200" height="150" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="596" y="110" font-size="15" font-weight="700" fill="#475569">장기 보관</text>
+    <text x="596" y="140" font-size="13" fill="#1A202C">보존 기간 정책 적용</text>
+    <text x="596" y="164" font-size="13" fill="#1A202C">사고 조사 시 조회</text>
+    <text x="596" y="188" font-size="13" fill="#1A202C">접근 권한 분리</text>
+
+    <rect x="24" y="320" width="752" height="94" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="44" y="350" font-size="15" font-weight="700" fill="#1A202C">설계 시 확인</text>
+    <text x="44" y="378" font-size="14" fill="#1A202C">· 수집 서버가 멈춘 동안 원본 로컬 로그가 며칠을 버티는가</text>
+    <text x="44" y="402" font-size="14" fill="#1A202C">· 로그 열람 권한이 로그 대상 서버 관리자와 분리돼 있는가</text>
+  </g>
+</svg>

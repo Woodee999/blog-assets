@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="보안 로그 수집 범위 3계층 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="24" y="34" font-size="20" font-weight="700" fill="#1A202C">수집 범위는 세 층으로 나눈다</text>
+
+    <rect x="24" y="58" width="752" height="106" rx="8" fill="#ffffff" stroke="#4A1E38" stroke-width="3"/>
+    <text x="44" y="88" font-size="16" font-weight="700" fill="#4A1E38">1층 · 무조건 수집</text>
+    <text x="44" y="116" font-size="14" fill="#1A202C">감사 로그 지움(1102) · 감사 정책 변경(4719) · SID 기록 추가(4765/4766)</text>
+    <text x="44" y="140" font-size="14" fill="#1A202C">디렉터리 복원 모드 시도(4794) · 로그온 · 계정 관리 · 특별 로그온</text>
+
+    <rect x="24" y="180" width="752" height="106" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="44" y="210" font-size="16" font-weight="700" fill="#475569">2층 · 조건부 수집</text>
+    <text x="44" y="238" font-size="14" fill="#1A202C">프로세스 만들기(4688) + 명령줄 · PowerShell 스크립트 블록(4104)</text>
+    <text x="44" y="262" font-size="14" fill="#4A5568">로그량이 크므로 도메인 컨트롤러와 노출 서버부터 단계적으로 확대</text>
+
+    <rect x="24" y="302" width="752" height="106" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="44" y="332" font-size="16" font-weight="700" fill="#475569">3층 · 수집하지 않음</text>
+    <text x="44" y="360" font-size="14" fill="#1A202C">대응 시 질문에 답하지 못하는 이벤트 · 정상 동작으로 대량 발생하는 항목</text>
+    <text x="44" y="384" font-size="14" fill="#4A5568">제외 결정도 사유와 함께 기록해 둔다</text>
+
+    <text x="24" y="436" font-size="14" font-weight="700" fill="#4A1E38">1층부터 확보하고, 2층은 로그량을 측정한 뒤 넓힙니다.</text>
+  </g>
+</svg>
