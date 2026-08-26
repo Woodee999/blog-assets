@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="구성 유효성 검사에서 자주 걸리는 항목과 조치">
+<rect width="800" height="450" fill="#fff"/>
+<defs><marker id="k2" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#94A3B8"/></marker></defs>
+<g font-family="system-ui,-apple-system,'Malgun Gothic',sans-serif">
+<text x="24" y="34" font-size="20" font-weight="700" fill="#1A202C">검사에서 자주 걸리는 항목</text>
+<rect x="24" y="60" width="300" height="52" rx="6" fill="#fff" stroke="#28402F" stroke-width="2"/>
+<text x="42" y="92" font-size="14" font-weight="700" fill="#1A202C">네트워크 중복성 경고</text>
+<rect x="24" y="126" width="300" height="52" rx="6" fill="#fff" stroke="#28402F" stroke-width="2"/>
+<text x="42" y="158" font-size="14" font-weight="700" fill="#1A202C">스토리지 스택 불일치</text>
+<rect x="24" y="192" width="300" height="52" rx="6" fill="#fff" stroke="#28402F" stroke-width="2"/>
+<text x="42" y="224" font-size="14" font-weight="700" fill="#1A202C">동적 디스크 사용</text>
+<rect x="24" y="258" width="300" height="52" rx="6" fill="#fff" stroke="#28402F" stroke-width="2"/>
+<text x="42" y="290" font-size="14" font-weight="700" fill="#1A202C">노드별 패치 수준 상이</text>
+<rect x="24" y="324" width="300" height="52" rx="6" fill="#fff" stroke="#28402F" stroke-width="2"/>
+<text x="42" y="356" font-size="14" font-weight="700" fill="#1A202C">AD 계정 권한 부족</text>
+<rect x="404" y="60" width="372" height="52" rx="6" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="422" y="92" font-size="14" fill="#1A202C">네트워크 분리 또는 팀 구성</text>
+<rect x="404" y="126" width="372" height="52" rx="6" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="422" y="158" font-size="14" fill="#1A202C">전 노드 드라이버·펌웨어 동일 버전</text>
+<rect x="404" y="192" width="372" height="52" rx="6" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="422" y="224" font-size="14" fill="#1A202C">기본 디스크로 재구성</text>
+<rect x="404" y="258" width="372" height="52" rx="6" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="422" y="290" font-size="14" fill="#1A202C">생성 전에 빌드와 UBR 을 맞춤</text>
+<rect x="404" y="324" width="372" height="52" rx="6" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="422" y="356" font-size="14" fill="#1A202C">CNO 사전 생성 또는 권한 부여</text>
+<line x1="328" y1="86" x2="400" y2="86" stroke="#94A3B8" stroke-width="2" marker-end="url(#k2)"/>
+<line x1="328" y1="152" x2="400" y2="152" stroke="#94A3B8" stroke-width="2" marker-end="url(#k2)"/>
+<line x1="328" y1="218" x2="400" y2="218" stroke="#94A3B8" stroke-width="2" marker-end="url(#k2)"/>
+<line x1="328" y1="284" x2="400" y2="284" stroke="#94A3B8" stroke-width="2" marker-end="url(#k2)"/>
+<line x1="328" y1="350" x2="400" y2="350" stroke="#94A3B8" stroke-width="2" marker-end="url(#k2)"/>
+<text x="24" y="412" font-size="14" font-weight="700" fill="#28402F">운영 중인 클러스터에는 -Ignore Storage 로 돌립니다. 디스크 검사가 중단을 유발합니다.</text>
+</g></svg>

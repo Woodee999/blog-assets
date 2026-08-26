@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="스크립트를 PowerShell 7로 옮길 때 판단 순서">
+<rect width="800" height="450" fill="#fff"/>
+<defs><marker id="p2" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#4A5568"/></marker></defs>
+<g font-family="system-ui,-apple-system,'Malgun Gothic',sans-serif">
+<text x="24" y="34" font-size="20" font-weight="700" fill="#1A202C">기존 스크립트를 옮기는 순서</text>
+<rect x="24" y="62" width="330" height="56" rx="8" fill="#fff" stroke="#2E2A56" stroke-width="2.5"/>
+<text x="44" y="96" font-size="15" font-weight="700" fill="#1A202C">① 제거된 명령 사용처 찾기</text>
+<rect x="24" y="150" width="330" height="56" rx="8" fill="#fff" stroke="#2E2A56" stroke-width="2.5"/>
+<text x="44" y="184" font-size="15" font-weight="700" fill="#1A202C">② 대체 가능한 것부터 교체</text>
+<rect x="24" y="238" width="330" height="56" rx="8" fill="#fff" stroke="#2E2A56" stroke-width="2.5"/>
+<text x="44" y="272" font-size="15" font-weight="700" fill="#1A202C">③ 문자열 처리 구간 결과 비교</text>
+<rect x="24" y="326" width="330" height="56" rx="8" fill="#fff" stroke="#2E2A56" stroke-width="2.5"/>
+<text x="44" y="360" font-size="15" font-weight="700" fill="#1A202C">④ 호출 대상을 pwsh.exe 로</text>
+<line x1="189" y1="118" x2="189" y2="148" stroke="#4A5568" stroke-width="2" marker-end="url(#p2)"/>
+<line x1="189" y1="206" x2="189" y2="236" stroke="#4A5568" stroke-width="2" marker-end="url(#p2)"/>
+<line x1="189" y1="294" x2="189" y2="324" stroke="#4A5568" stroke-width="2" marker-end="url(#p2)"/>
+<rect x="410" y="62" width="366" height="56" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="430" y="96" font-size="14" fill="#1A202C">Select-String 으로 폴더 전체를 훑습니다</text>
+<rect x="410" y="150" width="366" height="56" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="430" y="184" font-size="14" fill="#1A202C">WMI → CimCmdlets, EventLog → Get-WinEvent</text>
+<rect x="410" y="238" width="366" height="56" rx="8" fill="#fff" stroke="#B45309" stroke-width="2.5"/>
+<text x="430" y="266" font-size="14" font-weight="700" fill="#B45309">오류 없이 값만 달라지는 구간</text>
+<text x="430" y="286" font-size="13" fill="#4A5568">String.Split 이 대표적입니다</text>
+<rect x="410" y="326" width="366" height="56" rx="8" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="430" y="360" font-size="14" fill="#1A202C">이 단계를 먼저 하면 한꺼번에 실패합니다</text>
+<line x1="358" y1="90" x2="406" y2="90" stroke="#94A3B8" stroke-width="2" marker-end="url(#p2)"/>
+<line x1="358" y1="178" x2="406" y2="178" stroke="#94A3B8" stroke-width="2" marker-end="url(#p2)"/>
+<line x1="358" y1="266" x2="406" y2="266" stroke="#B45309" stroke-width="2" marker-end="url(#p2)"/>
+<line x1="358" y1="354" x2="406" y2="354" stroke="#94A3B8" stroke-width="2" marker-end="url(#p2)"/>
+<text x="24" y="424" font-size="14" font-weight="700" fill="#2E2A56">전부 옮길 필요는 없습니다. 새 스크립트부터 7 로 쓰면 됩니다.</text>
+</g></svg>

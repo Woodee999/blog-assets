@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="클러스터 생성 전 점검 세 영역">
+<rect width="800" height="450" fill="#fff"/>
+<g font-family="system-ui,-apple-system,'Malgun Gothic',sans-serif">
+<text x="24" y="34" font-size="20" font-weight="700" fill="#1A202C">클러스터 생성 전 점검 세 영역</text>
+<rect x="24" y="64" width="240" height="240" rx="10" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="44" y="96" font-size="16" font-weight="700" fill="#475569">하드웨어</text>
+<text x="44" y="130" font-size="13" fill="#1A202C">동일하거나 유사한 서버</text>
+<text x="44" y="158" font-size="13" fill="#1A202C">인증 하드웨어</text>
+<text x="44" y="186" font-size="13" fill="#1A202C">MPIO · DSM · HBA 동일</text>
+<text x="44" y="214" font-size="13" fill="#1A202C">드라이버 · 펌웨어 동일</text>
+<text x="44" y="242" font-size="13" fill="#1A202C">기본 디스크만 사용</text>
+<text x="44" y="270" font-size="13" fill="#1A202C">NTFS 또는 ReFS</text>
+<rect x="280" y="64" width="240" height="240" rx="10" fill="#F7FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="300" y="96" font-size="16" font-weight="700" fill="#475569">네트워크</text>
+<text x="300" y="130" font-size="13" fill="#1A202C">단일 장애점 제거</text>
+<text x="300" y="158" font-size="13" fill="#1A202C">여러 개의 구분된 네트워크</text>
+<text x="300" y="186" font-size="13" fill="#1A202C">또는 팀 구성 어댑터</text>
+<text x="300" y="214" font-size="13" fill="#1A202C">이중화 스위치 · 라우터</text>
+<text x="300" y="242" font-size="13" fill="#1A202C">iSCSI 어댑터 겸용 금지</text>
+<text x="300" y="270" font-size="13" fill="#4A5568">단일 네트워크면 검증 통과 필요</text>
+<rect x="536" y="64" width="240" height="240" rx="10" fill="#fff" stroke="#28402F" stroke-width="3"/>
+<text x="556" y="96" font-size="16" font-weight="700" fill="#28402F">Active Directory</text>
+<text x="556" y="130" font-size="13" fill="#1A202C">클러스터 이름 개체(CNO)</text>
+<text x="556" y="158" font-size="13" fill="#1A202C">가상 컴퓨터 개체(VCO)</text>
+<text x="556" y="186" font-size="13" fill="#1A202C">컴퓨터 개체 만들기 권한</text>
+<text x="556" y="214" font-size="13" fill="#1A202C">CNO 사전 생성 시 비활성화</text>
+<text x="556" y="242" font-size="13" fill="#4A5568">여기서 막히는 경우가</text>
+<text x="556" y="266" font-size="13" fill="#4A5568">가장 많습니다</text>
+<rect x="24" y="336" width="752" height="66" rx="8" fill="#fff" stroke="#28402F" stroke-width="2.5"/>
+<text x="44" y="366" font-size="15" font-weight="700" fill="#28402F">세 영역을 모두 확인한 뒤 Test-Cluster 로 구성 유효성 검사를 돌립니다</text>
+<text x="44" y="390" font-size="13" fill="#4A5568">보고서는 %SystemRoot%\Cluster\Reports 에 HTML 로 저장됩니다</text>
+</g></svg>
