@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs>
+    <marker id="a7" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">사고 인지 후 첫 한 시간</text>
+
+    <rect x="290" y="62" width="220" height="54" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="86" font-size="15" font-weight="700" fill="#111827" text-anchor="middle">사고 인지 · 접수</text>
+    <text x="400" y="106" font-size="12" fill="#6B7280" text-anchor="middle">보안 담당자 · 15분 이내</text>
+
+    <line x1="400" y1="118" x2="400" y2="136" stroke="#374151" stroke-width="2"/>
+    <line x1="150" y1="136" x2="650" y2="136" stroke="#374151" stroke-width="2"/>
+    <line x1="150" y1="136" x2="150" y2="166" stroke="#374151" stroke-width="2" marker-end="url(#a7)"/>
+    <line x1="400" y1="136" x2="400" y2="166" stroke="#374151" stroke-width="2" marker-end="url(#a7)"/>
+    <line x1="650" y1="136" x2="650" y2="166" stroke="#374151" stroke-width="2" marker-end="url(#a7)"/>
+
+    <rect x="40" y="172" width="220" height="112" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="150" y="200" font-size="15" font-weight="700" fill="#111827" text-anchor="middle">격리 범위 결정</text>
+    <text x="150" y="228" font-size="12" fill="#4B5563" text-anchor="middle">인프라 책임자</text>
+    <text x="150" y="250" font-size="12" fill="#4B5563" text-anchor="middle">30분 이내</text>
+    <text x="150" y="274" font-size="12" fill="#6B7280" text-anchor="middle">기본값은 네트워크 격리</text>
+
+    <rect x="290" y="172" width="220" height="112" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="200" font-size="15" font-weight="700" fill="#111827" text-anchor="middle">증거 보존</text>
+    <text x="400" y="228" font-size="12" fill="#4B5563" text-anchor="middle">별도 담당자</text>
+    <text x="400" y="250" font-size="12" fill="#4B5563" text-anchor="middle">격리와 동시 착수</text>
+    <text x="400" y="274" font-size="12" fill="#6B7280" text-anchor="middle">휘발성 높은 순서로</text>
+
+    <rect x="540" y="172" width="220" height="112" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="650" y="200" font-size="15" font-weight="700" fill="#111827" text-anchor="middle">보고 대상 확인</text>
+    <text x="650" y="228" font-size="12" fill="#4B5563" text-anchor="middle">보안 책임자</text>
+    <text x="650" y="250" font-size="12" fill="#4B5563" text-anchor="middle">등급 판정과 함께</text>
+    <text x="650" y="274" font-size="12" fill="#6B7280" text-anchor="middle">외부 통지는 법무로 이관</text>
+
+    <line x1="150" y1="286" x2="150" y2="312" stroke="#374151" stroke-width="2"/>
+    <line x1="400" y1="286" x2="400" y2="312" stroke="#374151" stroke-width="2"/>
+    <line x1="650" y1="286" x2="650" y2="312" stroke="#374151" stroke-width="2"/>
+    <line x1="150" y1="312" x2="650" y2="312" stroke="#374151" stroke-width="2"/>
+    <line x1="400" y1="312" x2="400" y2="336" stroke="#374151" stroke-width="2" marker-end="url(#a7)"/>
+
+    <rect x="290" y="342" width="220" height="54" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="400" y="366" font-size="15" font-weight="700" fill="#4338CA" text-anchor="middle">등급 판정 · 1차 보고</text>
+    <text x="400" y="386" font-size="12" fill="#4B5563" text-anchor="middle">인지 후 1시간 이내</text>
+
+    <text x="40" y="428" font-size="13" fill="#6B7280">세 갈래는 순서가 아니라 병렬입니다. 격리를 끝낸 뒤 증거를 챙기면 휘발성 데이터가 남지 않습니다.</text>
+  </g>
+</svg>

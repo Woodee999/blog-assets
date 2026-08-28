@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">조치 선택 — 위에서부터 검토합니다</text>
+
+    <rect x="40" y="66" width="330" height="60" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="60" y="92" font-size="15" font-weight="700" fill="#4338CA">1. CA에서 템플릿 게시 해제</text>
+    <text x="60" y="114" font-size="12" fill="#4B5563">발급 이력이 없다면 가장 빠른 조치</text>
+    <text x="392" y="90" font-size="13" fill="#111827">끊는 조건: 전체</text>
+    <text x="392" y="112" font-size="12" fill="#6B7280">되돌리기 쉬움 · 영향 확인 필요</text>
+
+    <rect x="40" y="138" width="330" height="60" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="60" y="164" font-size="15" font-weight="700" fill="#111827">2. 등록 권한에서 일반 그룹 제거</text>
+    <text x="60" y="186" font-size="12" fill="#4B5563">실제 필요한 그룹만 남김</text>
+    <text x="392" y="162" font-size="13" fill="#111827">끊는 조건: ③</text>
+    <text x="392" y="184" font-size="12" fill="#6B7280">사용 중인 템플릿의 1순위</text>
+
+    <rect x="40" y="210" width="330" height="60" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="60" y="236" font-size="15" font-weight="700" fill="#111827">3. "요청에 제공" 해제</text>
+    <text x="60" y="258" font-size="12" fill="#4B5563">주체를 AD 정보로 채우도록 변경</text>
+    <text x="392" y="234" font-size="13" fill="#111827">끊는 조건: ①</text>
+    <text x="392" y="256" font-size="12" fill="#6B7280">사용자 지정 주체 용도는 불가</text>
+
+    <rect x="40" y="282" width="330" height="60" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="60" y="308" font-size="15" font-weight="700" fill="#111827">4. 인증용 EKU 제거</text>
+    <text x="60" y="330" font-size="12" fill="#4B5563">암호화·서명 용도만 남김</text>
+    <text x="392" y="306" font-size="13" fill="#111827">끊는 조건: ②</text>
+    <text x="392" y="328" font-size="12" fill="#6B7280">그 인증서로 로그온 불가</text>
+
+    <rect x="40" y="354" width="330" height="60" rx="8" fill="#FEF3C7" stroke="#B45309" stroke-width="2"/>
+    <text x="60" y="380" font-size="15" font-weight="700" fill="#B45309">5. 관리자 승인 요구 켜기</text>
+    <text x="60" y="402" font-size="12" fill="#4B5563">발급마다 사람이 승인</text>
+    <text x="392" y="378" font-size="13" fill="#111827">끊는 조건: ④</text>
+    <text x="392" y="400" font-size="12" fill="#6B7280">발급 건수가 많으면 운영 부담</text>
+  </g>
+</svg>

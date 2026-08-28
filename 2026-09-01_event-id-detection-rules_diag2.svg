@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs>
+    <marker id="a4" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="38" font-size="20" font-weight="700" fill="#111827">탐지 규칙 튜닝 순환</text>
+
+    <rect x="250" y="70" width="300" height="62" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="400" y="96" font-size="15" font-weight="700" fill="#4338CA" text-anchor="middle">1. 기준선 측정 (알림 없이 2주)</text>
+    <text x="400" y="119" font-size="12" fill="#4B5563" text-anchor="middle">계정 유형별로 분리해 집계</text>
+
+    <line x1="552" y1="101" x2="620" y2="101" stroke="#374151" stroke-width="2"/>
+    <line x1="620" y1="101" x2="620" y2="192" stroke="#374151" stroke-width="2"/>
+    <line x1="620" y1="192" x2="592" y2="192" stroke="#374151" stroke-width="2" marker-end="url(#a4)"/>
+
+    <rect x="430" y="162" width="160" height="62" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="510" y="188" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">2. 임계값 설정</text>
+    <text x="510" y="210" font-size="12" fill="#4B5563" text-anchor="middle">상위 1% 지점 기준</text>
+
+    <line x1="510" y1="228" x2="510" y2="266" stroke="#374151" stroke-width="2" marker-end="url(#a4)"/>
+
+    <rect x="430" y="272" width="160" height="62" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="510" y="298" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">3. 규칙 운영</text>
+    <text x="510" y="320" font-size="12" fill="#4B5563" text-anchor="middle">알림 발생 · 조사</text>
+
+    <line x1="426" y1="303" x2="384" y2="303" stroke="#374151" stroke-width="2" marker-end="url(#a4)"/>
+
+    <rect x="210" y="272" width="170" height="62" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="295" y="298" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">4. 오탐 원인 분류</text>
+    <text x="295" y="320" font-size="12" fill="#4B5563" text-anchor="middle">예정 · 구성 · 범위</text>
+
+    <line x1="206" y1="303" x2="164" y2="303" stroke="#374151" stroke-width="2" marker-end="url(#a4)"/>
+
+    <rect x="40" y="272" width="120" height="62" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="100" y="298" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">5. 반영</text>
+    <text x="100" y="320" font-size="12" fill="#4B5563" text-anchor="middle">제외 조건 · 구성 수정</text>
+
+    <line x1="100" y1="268" x2="100" y2="101" stroke="#374151" stroke-width="2"/>
+    <line x1="100" y1="101" x2="244" y2="101" stroke="#374151" stroke-width="2" marker-end="url(#a4)"/>
+    <text x="112" y="180" font-size="12" fill="#6B7280">2주 뒤 재측정</text>
+
+    <line x1="40" y1="372" x2="766" y2="372" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="398" font-size="13" fill="#6B7280">구성 문제로 생긴 오탐은 제외 조건이 아니라 구성 수정으로 처리합니다.</text>
+    <text x="40" y="422" font-size="13" fill="#6B7280">제외 조건은 계정 · 원본 IP · 로그온 유형을 동시에 만족할 때만 적용되도록 좁게 씁니다.</text>
+  </g>
+</svg>

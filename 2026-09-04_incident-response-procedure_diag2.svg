@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs>
+    <marker id="a8" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">등급이 올라갈수록 넓어지는 보고 범위</text>
+
+    <rect x="40" y="72" width="300" height="72" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="60" y="102" font-size="15" font-weight="700" fill="#111827">1등급 · 관찰</text>
+    <text x="60" y="128" font-size="12" fill="#4B5563">이상 징후는 있으나 침해 근거 없음</text>
+    <text x="368" y="115" font-size="13" fill="#6B7280">담당자 기록만</text>
+
+    <line x1="190" y1="148" x2="190" y2="168" stroke="#374151" stroke-width="2" marker-end="url(#a8)"/>
+
+    <rect x="40" y="174" width="300" height="72" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="60" y="204" font-size="15" font-weight="700" fill="#111827">2등급 · 의심</text>
+    <text x="60" y="230" font-size="12" fill="#4B5563">침해 정황 있음, 범위 미확정</text>
+    <text x="368" y="217" font-size="13" fill="#6B7280">보안 책임자 즉시</text>
+
+    <line x1="190" y1="250" x2="190" y2="270" stroke="#374151" stroke-width="2" marker-end="url(#a8)"/>
+
+    <rect x="40" y="276" width="300" height="72" rx="8" fill="#FEF3C7" stroke="#B45309" stroke-width="2"/>
+    <text x="60" y="306" font-size="15" font-weight="700" fill="#B45309">3등급 · 확인</text>
+    <text x="60" y="332" font-size="12" fill="#4B5563">관리자 계정 비정상 로그온 성공 등</text>
+    <text x="368" y="319" font-size="13" fill="#6B7280">경영진 · 법무 동시</text>
+
+    <line x1="190" y1="352" x2="190" y2="372" stroke="#374151" stroke-width="2" marker-end="url(#a8)"/>
+
+    <rect x="40" y="378" width="300" height="52" rx="8" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="60" y="400" font-size="15" font-weight="700" fill="#C0392B">4등급 · 확산</text>
+    <text x="60" y="420" font-size="12" fill="#4B5563">다수 시스템 또는 개인정보 관련</text>
+    <text x="368" y="410" font-size="13" fill="#6B7280">외부 통지 절차 착수</text>
+
+    <line x1="560" y1="72" x2="560" y2="430" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="590" y="100" font-size="14" font-weight="700" fill="#111827">등급을 내리는 절차도</text>
+    <text x="590" y="122" font-size="14" font-weight="700" fill="#111827">함께 적습니다</text>
+    <text x="590" y="156" font-size="12" fill="#6B7280">오탐으로 판명되는 경우가</text>
+    <text x="590" y="178" font-size="12" fill="#6B7280">실제로는 더 많습니다.</text>
+    <text x="590" y="212" font-size="12" fill="#6B7280">내린 근거와 판단한 사람을</text>
+    <text x="590" y="234" font-size="12" fill="#6B7280">기록으로 남겨 두면 같은</text>
+    <text x="590" y="256" font-size="12" fill="#6B7280">징후가 다시 나타났을 때</text>
+    <text x="590" y="278" font-size="12" fill="#6B7280">판단이 빨라집니다.</text>
+    <text x="590" y="322" font-size="12" fill="#6B7280">외부 통지는 등급과 별도의</text>
+    <text x="590" y="344" font-size="12" fill="#6B7280">법정 기한으로 움직이므로</text>
+    <text x="590" y="366" font-size="12" fill="#6B7280">법무·경영으로 넘깁니다.</text>
+  </g>
+</svg>
