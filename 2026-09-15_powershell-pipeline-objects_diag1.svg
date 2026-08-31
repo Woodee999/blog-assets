@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="m6" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">텍스트를 넘기는 파이프 vs 객체를 넘기는 파이프</text>
+
+    <text x="40" y="80" font-size="15" font-weight="700" fill="#6B7280">전통적인 셸</text>
+    <rect x="40" y="94" width="180" height="58" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="130" y="119" font-size="13" fill="#374151" text-anchor="middle">명령 실행</text>
+    <text x="130" y="139" font-size="11" fill="#6B7280" text-anchor="middle">결과를 글자로 출력</text>
+    <line x1="224" y1="123" x2="256" y2="123" stroke="#9CA3AF" stroke-width="2" marker-end="url(#m6)"/>
+    <rect x="262" y="94" width="200" height="58" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="362" y="119" font-size="13" fill="#374151" text-anchor="middle">글자 덩어리</text>
+    <text x="362" y="139" font-size="11" fill="#6B7280" text-anchor="middle">줄 · 열 위치로만 구분</text>
+    <line x1="466" y1="123" x2="498" y2="123" stroke="#9CA3AF" stroke-width="2" marker-end="url(#m6)"/>
+    <rect x="504" y="94" width="256" height="58" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="632" y="119" font-size="13" fill="#374151" text-anchor="middle">받는 쪽에서 다시 잘라 씀</text>
+    <text x="632" y="139" font-size="11" fill="#6B7280" text-anchor="middle">서식이 바뀌면 스크립트가 깨짐</text>
+
+    <line x1="40" y1="184" x2="760" y2="184" stroke="#E5E7EB" stroke-width="1"/>
+
+    <text x="40" y="222" font-size="15" font-weight="700" fill="#4338CA">PowerShell</text>
+    <rect x="40" y="236" width="180" height="58" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="130" y="261" font-size="13" fill="#111827" text-anchor="middle">Get-ChildItem</text>
+    <text x="130" y="281" font-size="11" fill="#4B5563" text-anchor="middle">파일 객체를 반환</text>
+    <line x1="224" y1="265" x2="256" y2="265" stroke="#4338CA" stroke-width="2" marker-end="url(#m6)"/>
+    <rect x="262" y="236" width="200" height="58" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="362" y="261" font-size="13" fill="#111827" text-anchor="middle">객체가 하나씩 이동</text>
+    <text x="362" y="281" font-size="11" fill="#4B5563" text-anchor="middle">Name · Length · 그 외 속성</text>
+    <line x1="466" y1="265" x2="498" y2="265" stroke="#4338CA" stroke-width="2" marker-end="url(#m6)"/>
+    <rect x="504" y="236" width="256" height="58" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="632" y="261" font-size="13" fill="#111827" text-anchor="middle">$_.Length 로 속성을 직접 사용</text>
+    <text x="632" y="281" font-size="11" fill="#4B5563" text-anchor="middle">화면 서식과 무관하게 동작</text>
+
+    <line x1="40" y1="330" x2="760" y2="330" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="356" font-size="13" fill="#6B7280">화면에 표로 보이더라도 넘어가는 것은 표가 아니라 객체입니다.</text>
+    <text x="40" y="380" font-size="13" fill="#6B7280">Format-* 계열은 객체를 서식 정보로 바꾸므로 파이프라인 맨 끝에만 씁니다.</text>
+    <text x="40" y="404" font-size="13" fill="#6B7280">무엇이 넘어가는지 모를 때는 Get-Member 로 형식과 속성을 먼저 확인합니다.</text>
+  </g>
+</svg>

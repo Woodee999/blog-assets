@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="m5" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="19" font-weight="700" fill="#111827">"이 PC에서는 Windows 11을 실행할 수 없습니다" 원인 찾기</text>
+
+    <rect x="250" y="66" width="300" height="52" rx="8" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="400" y="97" font-size="14" font-weight="700" fill="#C0392B" text-anchor="middle">요구사항 검사에서 중단됨</text>
+
+    <line x1="400" y1="122" x2="400" y2="140" stroke="#374151" stroke-width="2"/>
+    <line x1="150" y1="140" x2="650" y2="140" stroke="#374151" stroke-width="2"/>
+    <line x1="150" y1="140" x2="150" y2="168" stroke="#374151" stroke-width="2" marker-end="url(#m5)"/>
+    <line x1="400" y1="140" x2="400" y2="168" stroke="#374151" stroke-width="2" marker-end="url(#m5)"/>
+    <line x1="650" y1="140" x2="650" y2="168" stroke="#374151" stroke-width="2" marker-end="url(#m5)"/>
+
+    <rect x="40" y="174" width="220" height="100" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="150" y="202" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">TPM 2.0 꺼짐</text>
+    <text x="150" y="228" font-size="11" fill="#4B5563" text-anchor="middle">펌웨어 설정에서 확인</text>
+    <text x="150" y="250" font-size="11" fill="#4B5563" text-anchor="middle">Intel: PTT</text>
+    <text x="150" y="266" font-size="11" fill="#4B5563" text-anchor="middle">AMD: fTPM</text>
+
+    <rect x="290" y="174" width="220" height="100" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="202" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">보안 부팅 꺼짐</text>
+    <text x="400" y="228" font-size="11" fill="#4B5563" text-anchor="middle">펌웨어 설정 &gt; Boot &gt;</text>
+    <text x="400" y="250" font-size="11" fill="#4B5563" text-anchor="middle">Secure Boot</text>
+    <text x="400" y="266" font-size="11" fill="#4B5563" text-anchor="middle">사용으로 변경</text>
+
+    <rect x="540" y="174" width="220" height="100" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="650" y="202" font-size="14" font-weight="700" fill="#374151" text-anchor="middle">프로세서 미지원</text>
+    <text x="650" y="228" font-size="11" fill="#4B5563" text-anchor="middle">제조사 모델명으로</text>
+    <text x="650" y="250" font-size="11" fill="#4B5563" text-anchor="middle">지원 목록 확인</text>
+    <text x="650" y="266" font-size="11" fill="#4B5563" text-anchor="middle">설정으로 해결 안 됨</text>
+
+    <line x1="150" y1="278" x2="150" y2="306" stroke="#374151" stroke-width="2" marker-end="url(#m5)"/>
+    <line x1="400" y1="278" x2="400" y2="306" stroke="#374151" stroke-width="2" marker-end="url(#m5)"/>
+    <line x1="650" y1="278" x2="650" y2="306" stroke="#374151" stroke-width="2" marker-end="url(#m5)"/>
+
+    <rect x="40" y="312" width="470" height="48" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="275" y="342" font-size="14" font-weight="700" fill="#4338CA" text-anchor="middle">펌웨어에서 켜면 대부분 통과합니다</text>
+
+    <rect x="540" y="312" width="220" height="48" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="650" y="342" font-size="13" fill="#374151" text-anchor="middle">하드웨어 교체 검토</text>
+
+    <line x1="40" y1="386" x2="760" y2="386" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="412" font-size="13" fill="#6B7280">하드웨어는 지원하는데 펌웨어에서 꺼져 있는 경우가 가장 많습니다 — 먼저 여기를 확인합니다.</text>
+  </g>
+</svg>

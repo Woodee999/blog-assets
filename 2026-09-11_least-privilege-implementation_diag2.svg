@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="m3" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">권한 생애주기 — 회수까지가 한 바퀴</text>
+
+    <rect x="40" y="76" width="150" height="82" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="115" y="106" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">1. 요청</text>
+    <text x="115" y="130" font-size="11" fill="#4B5563" text-anchor="middle">신청자</text>
+    <text x="115" y="150" font-size="11" fill="#6B7280" text-anchor="middle">사유 + 필요 기간</text>
+    <line x1="194" y1="117" x2="224" y2="117" stroke="#374151" stroke-width="2" marker-end="url(#m3)"/>
+
+    <rect x="230" y="76" width="150" height="82" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="305" y="106" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">2. 승인</text>
+    <text x="305" y="130" font-size="11" fill="#4B5563" text-anchor="middle">자산 소유자 · 3일</text>
+    <text x="305" y="150" font-size="11" fill="#6B7280" text-anchor="middle">승인 기록</text>
+    <line x1="384" y1="117" x2="414" y2="117" stroke="#374151" stroke-width="2" marker-end="url(#m3)"/>
+
+    <rect x="420" y="76" width="150" height="82" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="495" y="106" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">3. 부여</text>
+    <text x="495" y="130" font-size="11" fill="#4B5563" text-anchor="middle">인프라 · 1일</text>
+    <text x="495" y="150" font-size="11" fill="#6B7280" text-anchor="middle">이벤트 4728 · 4732</text>
+
+    <line x1="495" y1="162" x2="495" y2="196" stroke="#374151" stroke-width="2" marker-end="url(#m3)"/>
+
+    <rect x="420" y="202" width="150" height="82" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="495" y="232" font-size="14" font-weight="700" fill="#4338CA" text-anchor="middle">4. 재검토</text>
+    <text x="495" y="256" font-size="11" fill="#4B5563" text-anchor="middle">보안 · 분기 1회</text>
+    <text x="495" y="276" font-size="11" fill="#6B7280" text-anchor="middle">유지 · 회수 판정</text>
+
+    <line x1="416" y1="243" x2="386" y2="243" stroke="#374151" stroke-width="2" marker-end="url(#m3)"/>
+
+    <rect x="230" y="202" width="150" height="82" rx="8" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="305" y="232" font-size="14" font-weight="700" fill="#C0392B" text-anchor="middle">5. 회수</text>
+    <text x="305" y="256" font-size="11" fill="#4B5563" text-anchor="middle">인프라 · 1주</text>
+    <text x="305" y="276" font-size="11" fill="#6B7280" text-anchor="middle">그룹 제거 기록</text>
+
+    <line x1="226" y1="243" x2="120" y2="243" stroke="#374151" stroke-width="2"/>
+    <line x1="120" y1="243" x2="120" y2="164" stroke="#374151" stroke-width="2" marker-end="url(#m3)"/>
+    <text x="60" y="205" font-size="11" fill="#6B7280">필요하면</text>
+    <text x="60" y="223" font-size="11" fill="#6B7280">다시 신청</text>
+
+    <line x1="40" y1="322" x2="760" y2="322" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="348" font-size="13" fill="#6B7280">신청서에 "상시"라고 적히면 재검토 대상에서 사실상 빠집니다 — 필요 기간을 반드시 받습니다.</text>
+    <text x="40" y="372" font-size="13" fill="#6B7280">신청 목록과 이벤트 4728·4732를 대조하면 절차 없이 추가된 건이 드러납니다.</text>
+    <text x="40" y="396" font-size="13" fill="#6B7280">첫 재검토는 특권 그룹 여섯 개로만 범위를 좁혀야 끝까지 갑니다.</text>
+  </g>
+</svg>

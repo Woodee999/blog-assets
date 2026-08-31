@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="m4" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">클린 설치 진행 순서와 막히는 지점</text>
+
+    <rect x="40" y="72" width="164" height="66" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="122" y="100" font-size="14" font-weight="700" fill="#4338CA" text-anchor="middle">1. 준비</text>
+    <text x="122" y="122" font-size="11" fill="#4B5563" text-anchor="middle">백업 · 라이선스 · 드라이버</text>
+    <line x1="208" y1="105" x2="240" y2="105" stroke="#374151" stroke-width="2" marker-end="url(#m4)"/>
+
+    <rect x="246" y="72" width="164" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="328" y="100" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">2. USB 부팅</text>
+    <text x="328" y="122" font-size="11" fill="#4B5563" text-anchor="middle">UEFI: 항목 선택</text>
+    <line x1="414" y1="105" x2="446" y2="105" stroke="#374151" stroke-width="2" marker-end="url(#m4)"/>
+
+    <rect x="452" y="72" width="164" height="66" rx="8" fill="#ffffff" stroke="#C0392B" stroke-width="2"/>
+    <text x="534" y="100" font-size="14" font-weight="700" fill="#C0392B" text-anchor="middle">3. 요구사항 검사</text>
+    <text x="534" y="122" font-size="11" fill="#4B5563" text-anchor="middle">TPM · 보안 부팅 · CPU</text>
+    <line x1="620" y1="105" x2="652" y2="105" stroke="#374151" stroke-width="2" marker-end="url(#m4)"/>
+
+    <rect x="658" y="72" width="102" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="709" y="100" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">4. 에디션</text>
+    <text x="709" y="122" font-size="11" fill="#4B5563" text-anchor="middle">기존과 동일</text>
+
+    <line x1="709" y1="142" x2="709" y2="178" stroke="#374151" stroke-width="2" marker-end="url(#m4)"/>
+
+    <rect x="596" y="184" width="164" height="66" rx="8" fill="#ffffff" stroke="#C0392B" stroke-width="2"/>
+    <text x="678" y="212" font-size="14" font-weight="700" fill="#C0392B" text-anchor="middle">5. 파티션 선택</text>
+    <text x="678" y="234" font-size="11" fill="#4B5563" text-anchor="middle">여기부터 되돌릴 수 없음</text>
+    <line x1="592" y1="217" x2="560" y2="217" stroke="#374151" stroke-width="2" marker-end="url(#m4)"/>
+
+    <rect x="386" y="184" width="164" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="468" y="212" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">6. 파일 복사</text>
+    <text x="468" y="234" font-size="11" fill="#4B5563" text-anchor="middle">재부팅 · USB 제거 가능</text>
+    <line x1="382" y1="217" x2="350" y2="217" stroke="#374151" stroke-width="2" marker-end="url(#m4)"/>
+
+    <rect x="176" y="184" width="164" height="66" rx="8" fill="#ffffff" stroke="#C0392B" stroke-width="2"/>
+    <text x="258" y="212" font-size="14" font-weight="700" fill="#C0392B" text-anchor="middle">7. 초기 설정</text>
+    <text x="258" y="234" font-size="11" fill="#4B5563" text-anchor="middle">Home 은 인터넷 필수</text>
+
+    <line x1="40" y1="286" x2="760" y2="286" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="312" font-size="14" font-weight="700" fill="#C0392B">붉은 테두리 세 곳이 실제로 막히는 지점입니다</text>
+    <text x="40" y="342" font-size="13" fill="#6B7280">3단계 — 대부분 펌웨어에서 TPM(Intel PTT / AMD fTPM)과 보안 부팅을 켜면 통과합니다.</text>
+    <text x="40" y="366" font-size="13" fill="#6B7280">5단계 — "GPT 파티션 스타일" 메시지는 레거시(CSM)로 부팅한 경우이며, 다시 UEFI로 부팅하면 됩니다.</text>
+    <text x="40" y="390" font-size="13" fill="#6B7280">7단계 — Home 에디션은 인터넷 연결과 Microsoft 계정이 있어야 설정을 마칠 수 있습니다.</text>
+    <text x="40" y="414" font-size="13" fill="#6B7280">랜 드라이버를 USB에 미리 담아 두면 7단계에서 멈추지 않습니다.</text>
+  </g>
+</svg>
