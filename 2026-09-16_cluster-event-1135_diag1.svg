@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="c1" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">이벤트 1135 — 발생 패턴 세 가지</text>
+    <text x="40" y="60" font-size="13" fill="#6B7280">어느 패턴인지 먼저 정하면 확인할 범위가 줄어듭니다.</text>
+
+    <rect x="40" y="82" width="228" height="150" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <rect x="40" y="82" width="228" height="30" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+    <text x="154" y="103" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">패턴 A — 한 노드만</text>
+    <circle cx="90" cy="146" r="13" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <circle cx="154" cy="146" r="13" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <circle cx="218" cy="146" r="13" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <line x1="103" y1="146" x2="141" y2="146" stroke="#C0392B" stroke-width="2" stroke-dasharray="4 3"/>
+    <line x1="167" y1="146" x2="205" y2="146" stroke="#374151" stroke-width="2"/>
+    <text x="154" y="188" font-size="12" fill="#4B5563" text-anchor="middle">한 노드가 나머지 전부와</text>
+    <text x="154" y="206" font-size="12" fill="#4B5563" text-anchor="middle">통신을 잃음</text>
+    <text x="154" y="224" font-size="12" font-weight="700" fill="#C0392B" text-anchor="middle">NIC · 드라이버 · 방화벽</text>
+
+    <rect x="286" y="82" width="228" height="150" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <rect x="286" y="82" width="228" height="30" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="103" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">패턴 B — 사이트 간</text>
+    <circle cx="330" cy="146" r="13" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <circle cx="366" cy="146" r="13" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <circle cx="434" cy="146" r="13" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <circle cx="470" cy="146" r="13" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <line x1="383" y1="146" x2="417" y2="146" stroke="#C0392B" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="400" y="132" font-size="10" fill="#C0392B" text-anchor="middle">WAN</text>
+    <text x="400" y="188" font-size="12" fill="#4B5563" text-anchor="middle">사이트 사이 구간에서만</text>
+    <text x="400" y="206" font-size="12" fill="#4B5563" text-anchor="middle">끊김</text>
+    <text x="400" y="224" font-size="12" font-weight="700" fill="#C0392B" text-anchor="middle">WAN · 타임아웃 값</text>
+
+    <rect x="532" y="82" width="228" height="150" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <rect x="532" y="82" width="228" height="30" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+    <text x="646" y="103" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">패턴 C — 무작위</text>
+    <circle cx="582" cy="146" r="13" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <circle cx="646" cy="146" r="13" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <circle cx="710" cy="146" r="13" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <line x1="595" y1="146" x2="633" y2="146" stroke="#C0392B" stroke-width="2" stroke-dasharray="4 3"/>
+    <line x1="659" y1="146" x2="697" y2="146" stroke="#C0392B" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="646" y="188" font-size="12" fill="#4B5563" text-anchor="middle">끊기는 조합이 매번 바뀜</text>
+    <text x="646" y="206" font-size="12" fill="#4B5563" text-anchor="middle">지목할 장비가 없음</text>
+    <text x="646" y="224" font-size="12" font-weight="700" fill="#C0392B" text-anchor="middle">혼잡 · 메시지 지연</text>
+
+    <line x1="400" y1="238" x2="400" y2="266" stroke="#374151" stroke-width="2" marker-end="url(#c1)"/>
+    <rect x="196" y="272" width="408" height="46" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="301" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">모든 노드의 시스템 로그를 같은 시각대로 놓고 판정</text>
+
+    <line x1="40" y1="344" x2="760" y2="344" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="370" font-size="13" fill="#6B7280">한 노드만 기록했다면 그 노드 쪽, 여러 노드가 서로를 기록했다면 네트워크 쪽입니다.</text>
+    <text x="40" y="394" font-size="13" fill="#6B7280">한 노드에서만 이벤트를 뽑아 보면 A와 C를 구분할 수 없습니다.</text>
+    <text x="40" y="418" font-size="13" fill="#6B7280">시각이 서로 어긋나 보이면 노드 간 시간 동기부터 확인합니다.</text>
+  </g>
+</svg>

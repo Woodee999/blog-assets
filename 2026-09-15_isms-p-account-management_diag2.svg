@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="i2" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">분기 접근권한 검토 — 한 바퀴</text>
+
+    <line x1="90" y1="120" x2="740" y2="120" stroke="#E5E7EB" stroke-width="3"/>
+
+    <circle cx="120" cy="120" r="11" fill="#BE185D"/>
+    <circle cx="320" cy="120" r="11" fill="#BE185D"/>
+    <circle cx="520" cy="120" r="11" fill="#BE185D"/>
+    <circle cx="700" cy="120" r="11" fill="#BE185D"/>
+
+    <text x="120" y="98" font-size="12" font-weight="700" fill="#BE185D" text-anchor="middle">1주차</text>
+    <text x="320" y="98" font-size="12" font-weight="700" fill="#BE185D" text-anchor="middle">3주차</text>
+    <text x="520" y="98" font-size="12" font-weight="700" fill="#BE185D" text-anchor="middle">4주차</text>
+    <text x="700" y="98" font-size="12" font-weight="700" fill="#BE185D" text-anchor="middle">5주차</text>
+
+    <rect x="40" y="150" width="180" height="112" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="130" y="176" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">목록 추출</text>
+    <text x="130" y="200" font-size="11" fill="#4B5563" text-anchor="middle">담당: 보안</text>
+    <text x="130" y="222" font-size="11" fill="#6B7280" text-anchor="middle">특권 그룹 6개 +</text>
+    <text x="130" y="242" font-size="11" fill="#6B7280" text-anchor="middle">공유 계정 목록</text>
+
+    <rect x="240" y="150" width="180" height="112" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="330" y="176" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">소유자 확인</text>
+    <text x="330" y="200" font-size="11" fill="#4B5563" text-anchor="middle">담당: 부서 책임자</text>
+    <text x="330" y="222" font-size="11" fill="#6B7280" text-anchor="middle">유지 · 회수 판정</text>
+    <text x="330" y="242" font-size="11" fill="#6B7280" text-anchor="middle">회신을 문서로</text>
+
+    <rect x="440" y="150" width="180" height="112" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="530" y="176" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">조치</text>
+    <text x="530" y="200" font-size="11" fill="#4B5563" text-anchor="middle">담당: 인프라</text>
+    <text x="530" y="222" font-size="11" fill="#6B7280" text-anchor="middle">그룹 제거 · 비활성화</text>
+    <text x="530" y="242" font-size="11" fill="#6B7280" text-anchor="middle">4729 · 4733 로 확인</text>
+
+    <rect x="640" y="150" width="120" height="112" rx="8" fill="#FCE7F3" stroke="#BE185D" stroke-width="2"/>
+    <text x="700" y="176" font-size="14" font-weight="700" fill="#BE185D" text-anchor="middle">결과 기록</text>
+    <text x="700" y="200" font-size="11" fill="#4B5563" text-anchor="middle">담당: 보안</text>
+    <text x="700" y="222" font-size="11" fill="#6B7280" text-anchor="middle">검토 결과</text>
+    <text x="700" y="242" font-size="11" fill="#6B7280" text-anchor="middle">보고서</text>
+
+    <line x1="220" y1="206" x2="236" y2="206" stroke="#374151" stroke-width="2" marker-end="url(#i2)"/>
+    <line x1="420" y1="206" x2="436" y2="206" stroke="#374151" stroke-width="2" marker-end="url(#i2)"/>
+    <line x1="620" y1="206" x2="636" y2="206" stroke="#374151" stroke-width="2" marker-end="url(#i2)"/>
+
+    <line x1="40" y1="300" x2="760" y2="300" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="326" font-size="13" fill="#6B7280">추출 파일에는 반드시 추출 일시를 넣습니다. 언제 기준인지 모르는 목록은 증적으로 쓰기 어렵습니다.</text>
+    <text x="40" y="350" font-size="13" fill="#6B7280">"검토했다"와 "조치했다" 사이가 가장 자주 비어 있는 칸입니다. 판정 목록과 이벤트를 나란히 붙여 둡니다.</text>
+    <text x="40" y="374" font-size="13" fill="#6B7280">첫 분기는 범위를 좁혀 완주하는 것이 목표입니다. 끝나지 않은 검토는 다음 분기에 처음부터 다시 시작됩니다.</text>
+    <text x="40" y="398" font-size="13" fill="#6B7280">서비스 계정은 마지막 로그온이 아니라 그 서비스가 아직 쓰이는지로 판단합니다.</text>
+  </g>
+</svg>

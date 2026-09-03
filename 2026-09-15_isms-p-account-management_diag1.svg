@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="i1" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="34" font-size="19" font-weight="700" fill="#111827">인증기준 → Windows 통제 → 증적</text>
+
+    <text x="140" y="66" font-size="13" font-weight="700" fill="#6B7280" text-anchor="middle">인증기준</text>
+    <text x="400" y="66" font-size="13" font-weight="700" fill="#6B7280" text-anchor="middle">Windows에서 볼 지점</text>
+    <text x="660" y="66" font-size="13" font-weight="700" fill="#6B7280" text-anchor="middle">증적으로 남는 것</text>
+
+    <rect x="40" y="80" width="200" height="66" rx="8" fill="#FCE7F3" stroke="#BE185D" stroke-width="2"/>
+    <text x="140" y="106" font-size="13" font-weight="700" fill="#BE185D" text-anchor="middle">2.5.1 사용자 계정 관리</text>
+    <text x="140" y="128" font-size="11" fill="#4B5563" text-anchor="middle">등록 · 변경 · 말소 절차</text>
+    <line x1="244" y1="113" x2="286" y2="113" stroke="#374151" stroke-width="2" marker-end="url(#i1)"/>
+    <rect x="292" y="80" width="216" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="106" font-size="12" fill="#111827" text-anchor="middle">계정 생성 · 그룹 변경</text>
+    <text x="400" y="128" font-size="12" fill="#111827" text-anchor="middle">감사 정책 활성 여부</text>
+    <line x1="512" y1="113" x2="554" y2="113" stroke="#374151" stroke-width="2" marker-end="url(#i1)"/>
+    <rect x="560" y="80" width="200" height="66" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="660" y="106" font-size="12" fill="#374151" text-anchor="middle">4720 · 4728 · 4732</text>
+    <text x="660" y="128" font-size="12" fill="#374151" text-anchor="middle">4725 · 4726 · 4729</text>
+
+    <rect x="40" y="158" width="200" height="66" rx="8" fill="#FCE7F3" stroke="#BE185D" stroke-width="2"/>
+    <text x="140" y="184" font-size="13" font-weight="700" fill="#BE185D" text-anchor="middle">2.5.2 사용자 식별</text>
+    <text x="140" y="206" font-size="11" fill="#4B5563" text-anchor="middle">유일 식별자 · 공유 통제</text>
+    <line x1="244" y1="191" x2="286" y2="191" stroke="#374151" stroke-width="2" marker-end="url(#i1)"/>
+    <rect x="292" y="158" width="216" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="184" font-size="12" fill="#111827" text-anchor="middle">공유 계정 존재 여부</text>
+    <text x="400" y="206" font-size="12" fill="#111827" text-anchor="middle">계정 명명 규칙</text>
+    <line x1="512" y1="191" x2="554" y2="191" stroke="#374151" stroke-width="2" marker-end="url(#i1)"/>
+    <rect x="560" y="158" width="200" height="66" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="660" y="184" font-size="12" fill="#374151" text-anchor="middle">공유 계정 목록과</text>
+    <text x="660" y="206" font-size="12" fill="#374151" text-anchor="middle">사유 · 승인 기록</text>
+
+    <rect x="40" y="236" width="200" height="66" rx="8" fill="#FCE7F3" stroke="#BE185D" stroke-width="2"/>
+    <text x="140" y="262" font-size="13" font-weight="700" fill="#BE185D" text-anchor="middle">2.5.5 특수 계정 · 권한</text>
+    <text x="140" y="284" font-size="11" fill="#4B5563" text-anchor="middle">최소 부여 · 별도 식별</text>
+    <line x1="244" y1="269" x2="286" y2="269" stroke="#374151" stroke-width="2" marker-end="url(#i1)"/>
+    <rect x="292" y="236" width="216" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="262" font-size="12" fill="#111827" text-anchor="middle">특권 그룹 구성원</text>
+    <text x="400" y="284" font-size="12" fill="#111827" text-anchor="middle">관리 계정 분리</text>
+    <line x1="512" y1="269" x2="554" y2="269" stroke="#374151" stroke-width="2" marker-end="url(#i1)"/>
+    <rect x="560" y="236" width="200" height="66" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="660" y="262" font-size="12" fill="#374151" text-anchor="middle">그룹별 구성원 목록</text>
+    <text x="660" y="284" font-size="12" fill="#374151" text-anchor="middle">(추출 일시 포함)</text>
+
+    <rect x="40" y="314" width="200" height="66" rx="8" fill="#FCE7F3" stroke="#BE185D" stroke-width="2"/>
+    <text x="140" y="340" font-size="13" font-weight="700" fill="#BE185D" text-anchor="middle">2.5.6 접근권한 검토</text>
+    <text x="140" y="362" font-size="11" fill="#4B5563" text-anchor="middle">이력 보존 · 주기적 검토</text>
+    <line x1="244" y1="347" x2="286" y2="347" stroke="#374151" stroke-width="2" marker-end="url(#i1)"/>
+    <rect x="292" y="314" width="216" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="340" font-size="12" fill="#111827" text-anchor="middle">보안 로그 보존 기간</text>
+    <text x="400" y="362" font-size="12" fill="#111827" text-anchor="middle">검토 실행 여부</text>
+    <line x1="512" y1="347" x2="554" y2="347" stroke="#374151" stroke-width="2" marker-end="url(#i1)"/>
+    <rect x="560" y="314" width="200" height="66" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="660" y="340" font-size="12" fill="#374151" text-anchor="middle">검토 결과 보고서와</text>
+    <text x="660" y="362" font-size="12" fill="#374151" text-anchor="middle">조치 기록</text>
+
+    <line x1="40" y1="400" x2="760" y2="400" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="426" font-size="13" fill="#6B7280">네 항목 모두 설정보다 기록을 봅니다. 지금 무엇이 기록되고 있는지부터 확인하는 순서가 맞습니다.</text>
+  </g>
+</svg>

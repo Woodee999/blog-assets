@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="n5" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">5719는 발생 시각으로 먼저 가릅니다</text>
+
+    <rect x="290" y="60" width="220" height="52" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+    <text x="400" y="83" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">시스템 로그 · NETLOGON</text>
+    <text x="400" y="102" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">이벤트 ID 5719</text>
+
+    <line x1="400" y1="112" x2="400" y2="132" stroke="#374151" stroke-width="2"/>
+    <line x1="190" y1="132" x2="610" y2="132" stroke="#374151" stroke-width="2"/>
+    <line x1="190" y1="132" x2="190" y2="160" stroke="#374151" stroke-width="2" marker-end="url(#n5)"/>
+    <line x1="610" y1="132" x2="610" y2="160" stroke="#374151" stroke-width="2" marker-end="url(#n5)"/>
+    <rect x="292" y="122" width="216" height="20" fill="#ffffff"/>
+    <text x="400" y="137" font-size="12" fill="#6B7280" text-anchor="middle">부팅 시각과 붙어 있는가?</text>
+
+    <rect x="40" y="166" width="300" height="150" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <rect x="40" y="166" width="300" height="32" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+    <text x="190" y="188" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">부팅 직후 단발</text>
+    <text x="62" y="222" font-size="13" fill="#4B5563">네트워크 스택보다 Netlogon이 먼저</text>
+    <text x="62" y="244" font-size="13" fill="#4B5563">링크 미협상 · DHCP 주소 지연</text>
+    <text x="62" y="272" font-size="13" font-weight="700" fill="#111827">확인 — 뒤따르는 5719가 없는가</text>
+    <text x="62" y="296" font-size="13" fill="#4B5563">조치 — NIC 드라이버 · 포트 협상</text>
+
+    <rect x="460" y="166" width="300" height="150" rx="8" fill="#ffffff" stroke="#C0392B" stroke-width="2"/>
+    <rect x="460" y="166" width="300" height="32" rx="8" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="610" y="188" font-size="14" font-weight="700" fill="#C0392B" text-anchor="middle">운영 중 반복</text>
+    <text x="482" y="222" font-size="13" fill="#4B5563">타이밍이 아님 — 원인이 따로 있음</text>
+    <text x="482" y="248" font-size="13" fill="#4B5563">네트워크 연결 · Tcpip.sys 누수</text>
+    <text x="482" y="270" font-size="13" fill="#4B5563">NetBT 데이터그램 버퍼 부족</text>
+    <text x="482" y="298" font-size="13" font-weight="700" fill="#C0392B">확인 — 같은 시각 다른 오류 유무</text>
+
+    <line x1="40" y1="348" x2="760" y2="348" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="374" font-size="13" fill="#6B7280">5719만 단독이면 도메인 통신 경로에 한정된 문제일 가능성이 큽니다.</text>
+    <text x="40" y="398" font-size="13" fill="#6B7280">파일 공유·이름 확인 오류가 같이 몰려 있으면 서버 자원이나 네트워크 자체를 봅니다.</text>
+    <text x="40" y="422" font-size="13" fill="#6B7280">"재부팅하면 한동안 괜찮다"는 패턴은 누수를 의심할 근거입니다.</text>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="n6" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">조사 순서</text>
+
+    <rect x="40" y="62" width="720" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <rect x="40" y="62" width="8" height="66" fill="#374151"/>
+    <text x="70" y="88" font-size="15" font-weight="700" fill="#111827">1 — 보안 채널이 살아 있는지</text>
+    <text x="70" y="112" font-size="12" fill="#4B5563">Test-ComputerSecureChannel · nltest /dsgetdc: · nltest /sc_query:  → 실패면 도메인 재가입</text>
+
+    <line x1="400" y1="128" x2="400" y2="148" stroke="#374151" stroke-width="2" marker-end="url(#n6)"/>
+
+    <rect x="40" y="154" width="720" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <rect x="40" y="154" width="8" height="66" fill="#374151"/>
+    <text x="70" y="180" font-size="15" font-weight="700" fill="#111827">2 — 발생 시각을 부팅 시각과 대조</text>
+    <text x="70" y="204" font-size="12" fill="#4B5563">Get-WinEvent 로 5719 목록 · LastBootUpTime 과 비교  → 붙어 있으면 타이밍, 흩어져 있으면 3단계</text>
+
+    <line x1="400" y1="220" x2="400" y2="240" stroke="#374151" stroke-width="2" marker-end="url(#n6)"/>
+
+    <rect x="40" y="246" width="720" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <rect x="40" y="246" width="8" height="66" fill="#374151"/>
+    <text x="70" y="272" font-size="15" font-weight="700" fill="#111827">3 — 자원 확인</text>
+    <text x="70" y="296" font-size="12" fill="#4B5563">Pool Nonpaged Bytes 추이 · TIME_WAIT 누적 · netsh int ipv4 show dynamicport tcp</text>
+
+    <line x1="400" y1="312" x2="400" y2="332" stroke="#374151" stroke-width="2" marker-end="url(#n6)"/>
+
+    <rect x="40" y="338" width="720" height="66" rx="8" fill="#F3F4F6" stroke="#C0392B" stroke-width="2"/>
+    <rect x="40" y="338" width="8" height="66" fill="#C0392B"/>
+    <text x="70" y="364" font-size="15" font-weight="700" fill="#111827">4 — 값 조정은 마지막</text>
+    <text x="70" y="388" font-size="12" fill="#4B5563">netsh 로 동적 포트 범위 조정이 먼저. IRPStackSize 는 LanmanServer\Parameters — 경로가 다름</text>
+
+    <text x="40" y="434" font-size="13" fill="#6B7280">조치를 한꺼번에 넣으면 어느 것이 효과가 있었는지 끝까지 알 수 없습니다.</text>
+  </g>
+</svg>

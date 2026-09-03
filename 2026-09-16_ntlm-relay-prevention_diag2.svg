@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="n2" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">적용 순서 — 감사가 먼저입니다</text>
+
+    <rect x="40" y="66" width="720" height="62" rx="8" fill="#EEF2FF" stroke="#4338CA" stroke-width="2"/>
+    <text x="64" y="93" font-size="15" font-weight="700" fill="#4338CA">0. 감사 모드 (2주) — 차단하지 않고 기록만</text>
+    <text x="64" y="116" font-size="12" fill="#4B5563">AuditClientDoesNotSupportSigning / AuditServerDoesNotSupportSigning — 지원하지 않는 상대 목록 확보</text>
+
+    <line x1="400" y1="132" x2="400" y2="152" stroke="#374151" stroke-width="2" marker-end="url(#n2)"/>
+
+    <rect x="40" y="158" width="720" height="70" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="64" y="185" font-size="15" font-weight="700" fill="#111827">1. SMB 서명 요구</text>
+    <text x="64" y="208" font-size="12" fill="#4B5563">Microsoft 네트워크 클라이언트 / 서버: 통신에 디지털 서명(항상) — 한쪽만 켜도 적용됨</text>
+    <text x="640" y="197" font-size="12" fill="#6B7280">되돌리기 쉬움</text>
+
+    <line x1="400" y1="232" x2="400" y2="252" stroke="#374151" stroke-width="2" marker-end="url(#n2)"/>
+
+    <rect x="40" y="258" width="720" height="86" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="64" y="285" font-size="15" font-weight="700" fill="#111827">2. LDAP 서명 + 채널 바인딩</text>
+    <text x="64" y="308" font-size="12" fill="#4B5563">LDAPServerIntegrity = 2 · LdapEnforceChannelBinding = 2 (도메인 컨트롤러)</text>
+    <text x="64" y="331" font-size="12" fill="#C0392B">둘을 한 번에 켜지 않습니다 — 미지원 장비의 인증이 즉시 끊깁니다</text>
+
+    <line x1="400" y1="348" x2="400" y2="368" stroke="#374151" stroke-width="2" marker-end="url(#n2)"/>
+
+    <rect x="40" y="374" width="720" height="62" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <text x="64" y="401" font-size="15" font-weight="700" fill="#111827">3. NTLM 자체를 줄이기</text>
+    <text x="64" y="424" font-size="12" fill="#4B5563">Protected Users 그룹 · NTLM 제한 정책 — 감사로 사용처를 파악한 뒤 대체 가능한 것부터</text>
+  </g>
+</svg>

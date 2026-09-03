@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <defs><marker id="c2" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+    <text x="40" y="36" font-size="20" font-weight="700" fill="#111827">조사 순서 — 판정이 명확한 것부터</text>
+
+    <rect x="40" y="66" width="720" height="86" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <rect x="40" y="66" width="8" height="86" fill="#374151"/>
+    <text x="70" y="94" font-size="15" font-weight="700" fill="#111827">1단계 — 방화벽 · 백신 제외 배제</text>
+    <text x="70" y="118" font-size="12" fill="#4B5563">UDP/TCP 3343, TCP 135, UDP 464, TCP 445, 동적 상위 포트, ICMP 인·아웃바운드</text>
+    <text x="70" y="140" font-size="12" fill="#4B5563">FileShare Witness 경로, %Systemroot%\Cluster, C:\ClusterStorage, Hyper-V 경로·프로세스</text>
+    <text x="700" y="100" font-size="12" font-weight="700" fill="#C0392B" text-anchor="middle">빠짐 = 원인</text>
+    <text x="700" y="122" font-size="12" fill="#6B7280" text-anchor="middle">정상 = 배제</text>
+
+    <line x1="400" y1="152" x2="400" y2="176" stroke="#374151" stroke-width="2" marker-end="url(#c2)"/>
+
+    <rect x="40" y="182" width="720" height="86" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+    <rect x="40" y="182" width="8" height="86" fill="#374151"/>
+    <text x="70" y="210" font-size="15" font-weight="700" fill="#111827">2단계 — 지연과 폐기 확인</text>
+    <text x="70" y="234" font-size="12" fill="#4B5563">Network Interface\Packets Received Discarded 가 0보다 크면 수신 버퍼 부족</text>
+    <text x="70" y="256" font-size="12" fill="#4B5563">유효성 검사에서 지연 2,000ms 초과는 문제로 표시됨</text>
+    <text x="700" y="216" font-size="12" font-weight="700" fill="#C0392B" text-anchor="middle">버퍼 조정</text>
+    <text x="700" y="238" font-size="12" fill="#6B7280" text-anchor="middle">타임아웃은 마지막</text>
+
+    <line x1="400" y1="268" x2="400" y2="292" stroke="#374151" stroke-width="2" marker-end="url(#c2)"/>
+
+    <rect x="40" y="298" width="720" height="86" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+    <rect x="40" y="298" width="8" height="86" fill="#C0392B"/>
+    <text x="70" y="326" font-size="15" font-weight="700" fill="#111827">3단계 — 클러스터 로그 대조</text>
+    <text x="70" y="350" font-size="12" fill="#4B5563">Get-ClusterLog -TimeSpan 180 -UseLocalTime — 노드마다 파일이 하나씩 생성됨</text>
+    <text x="70" y="372" font-size="12" fill="#4B5563">1135를 기록한 노드와 사라졌다고 지목된 노드를 나란히 놓고 같은 시각을 봄</text>
+
+    <line x1="40" y1="404" x2="760" y2="404" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="40" y="430" font-size="13" fill="#6B7280">지연·폐기부터 파고들면 정상 범위가 환경마다 달라 판단이 늘어집니다. 순서를 지키는 편이 빠릅니다.</text>
+  </g>
+</svg>
