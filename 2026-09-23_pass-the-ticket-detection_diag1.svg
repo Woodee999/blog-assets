@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450"><rect x="0" y="0" width="800" height="450" fill="#ffffff"/><defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs><g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+<text x="40" y="36" font-size="20" font-weight="700" fill="#111827">셋을 먼저 구분합니다 — 기록이 남는 위치가 다릅니다</text>
+<rect x="40" y="66" width="230" height="164" rx="8" fill="#ffffff" stroke="#C0392B" stroke-width="2"/>
+<rect x="40" y="66" width="230" height="30" rx="8" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+<text x="155" y="87" font-size="14" font-weight="700" fill="#C0392B" text-anchor="middle">Pass-the-Ticket</text>
+<text x="62" y="120" font-size="13" fill="#111827">정상 티켓을 훔쳐 재사용</text>
+<text x="62" y="148" font-size="12" fill="#4B5563">위조하지 않음</text>
+<line x1="62" y1="164" x2="248" y2="164" stroke="#E5E7EB" stroke-width="1"/>
+<text x="62" y="188" font-size="13" font-weight="700" fill="#111827">DC 기록 — 남음</text>
+<text x="62" y="212" font-size="12" fill="#4B5563">4768 · 4769 활용 가능</text>
+<rect x="285" y="66" width="230" height="164" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<rect x="285" y="66" width="230" height="30" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+<text x="400" y="87" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">골든 티켓</text>
+<text x="307" y="120" font-size="13" fill="#111827">krbtgt 키로 TGT 위조</text>
+<text x="307" y="148" font-size="12" fill="#4B5563">인증 단계 자체를 건너뜀</text>
+<line x1="307" y1="164" x2="493" y2="164" stroke="#E5E7EB" stroke-width="1"/>
+<text x="307" y="188" font-size="13" font-weight="700" fill="#111827">DC 기록 — 일부만</text>
+<text x="307" y="212" font-size="12" fill="#4B5563">사후 krbtgt 2회 재설정</text>
+<rect x="530" y="66" width="230" height="164" rx="8" fill="#ffffff" stroke="#C0392B" stroke-width="2"/>
+<rect x="530" y="66" width="230" height="30" rx="8" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+<text x="645" y="87" font-size="14" font-weight="700" fill="#C0392B" text-anchor="middle">실버 티켓</text>
+<text x="552" y="120" font-size="13" fill="#111827">서비스 키로 TGS 위조</text>
+<text x="552" y="148" font-size="12" fill="#4B5563">DC를 아예 거치지 않음</text>
+<line x1="552" y1="164" x2="738" y2="164" stroke="#E5E7EB" stroke-width="1"/>
+<text x="552" y="188" font-size="13" font-weight="700" fill="#C0392B">DC 기록 — 남지 않음</text>
+<text x="552" y="212" font-size="12" fill="#4B5563">대상 서버 4624·4672뿐</text>
+<rect x="40" y="252" width="720" height="52" rx="8" fill="#F3F4F6" stroke="#C0392B" stroke-width="2"/>
+<text x="400" y="283" font-size="15" font-weight="700" fill="#111827" text-anchor="middle">DC만 수집하면 실버 티켓은 구조적으로 못 잡습니다</text>
+<line x1="40" y1="336" x2="760" y2="336" stroke="#E5E7EB" stroke-width="1"/>
+<text x="40" y="362" font-size="13" fill="#6B7280">PtH는 NTLM 해시를, PtT는 Kerberos 티켓을 재사용합니다 — 프로토콜이 다르니 탐지 지점도 다릅니다.</text>
+<text x="40" y="386" font-size="13" fill="#6B7280">암호를 바꿔도 이미 발급된 티켓은 만료까지 유효합니다. 사고 대응에서 이 구간이 비기 쉽습니다.</text>
+<text x="40" y="418" font-size="13" fill="#6B7280">4768·4769·4770·4771은 도메인 컨트롤러에서만 생성됩니다.</text>
+</g></svg>

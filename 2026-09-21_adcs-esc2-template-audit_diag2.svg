@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450"><rect x="0" y="0" width="800" height="450" fill="#ffffff"/><defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs><g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+<text x="40" y="36" font-size="20" font-weight="700" fill="#111827">ESC2 점검 순서 — 범위를 먼저 좁힙니다</text>
+<rect x="40" y="64" width="720" height="62" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<rect x="40" y="64" width="8" height="62" fill="#374151"/>
+<text x="70" y="90" font-size="15" font-weight="700" fill="#111827">1 — CA가 실제로 게시한 템플릿만 추림</text>
+<text x="70" y="114" font-size="12" fill="#4B5563">certutil -CATemplates · 디렉터리에 정의만 있고 미게시면 발급 경로가 없음</text>
+<line x1="400" y1="126" x2="400" y2="146" stroke="#374151" stroke-width="2" marker-end="url(#m)"/>
+<rect x="40" y="152" width="720" height="62" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<rect x="40" y="152" width="8" height="62" fill="#374151"/>
+<text x="70" y="178" font-size="15" font-weight="700" fill="#111827">2 — EKU로 1차 필터</text>
+<text x="70" y="202" font-size="12" fill="#4B5563">pKIExtendedKeyUsage 가 비었거나 2.5.29.37.0 포함 → ESC2 후보</text>
+<line x1="400" y1="214" x2="400" y2="234" stroke="#374151" stroke-width="2" marker-end="url(#m)"/>
+<rect x="40" y="240" width="720" height="62" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<rect x="40" y="240" width="8" height="62" fill="#374151"/>
+<text x="70" y="266" font-size="15" font-weight="700" fill="#111827">3 — 승인·서명 조건으로 배제</text>
+<text x="70" y="290" font-size="12" fill="#4B5563">msPKI-Enrollment-Flag 의 0x2 비트 = 승인 필요 · msPKI-RA-Signature 가 0 이면 서명 없음</text>
+<line x1="400" y1="302" x2="400" y2="322" stroke="#374151" stroke-width="2" marker-end="url(#m)"/>
+<rect x="40" y="328" width="720" height="62" rx="8" fill="#F3F4F6" stroke="#C0392B" stroke-width="2"/>
+<rect x="40" y="328" width="8" height="62" fill="#C0392B"/>
+<text x="70" y="354" font-size="15" font-weight="700" fill="#111827">4 — 등록 권한이 마지막 판정</text>
+<text x="70" y="378" font-size="12" fill="#4B5563">Authenticated Users · Domain Users · Everyone 에 Enroll 또는 AutoEnroll 이 있는가</text>
+<text x="40" y="424" font-size="13" fill="#6B7280">AutoEnroll 을 놓치기 쉽습니다 — Enroll 만 보면 자동 등록 경로가 남습니다.</text>
+</g></svg>

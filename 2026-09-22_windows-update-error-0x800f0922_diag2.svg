@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450"><rect x="0" y="0" width="800" height="450" fill="#ffffff"/><defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs><g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+<text x="40" y="36" font-size="20" font-weight="700" fill="#111827">조사 순서 — 근거 있는 것부터</text>
+<rect x="40" y="64" width="720" height="66" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+<rect x="40" y="64" width="8" height="66" fill="#374151"/>
+<text x="70" y="90" font-size="15" font-weight="700" fill="#111827">1 — CBS.log 에서 실패 지점 찾기</text>
+<text x="70" y="114" font-size="12" fill="#4B5563">findstr /i "CBS_E_INSTALLERS_FAILED" %windir%\Logs\CBS\CBS.log · 앞쪽 수십 줄에 원인</text>
+<line x1="400" y1="130" x2="400" y2="150" stroke="#374151" stroke-width="2" marker-end="url(#m)"/>
+<rect x="40" y="156" width="720" height="88" rx="8" fill="#ffffff" stroke="#C0392B" stroke-width="2"/>
+<rect x="40" y="156" width="8" height="88" fill="#C0392B"/>
+<text x="70" y="182" font-size="15" font-weight="700" fill="#111827">2 — 문서화된 두 원인 배제</text>
+<text x="70" y="206" font-size="12" fill="#4B5563">① SecureBootEncodeUEFI 예약 작업 손상 — 업데이트 설치 시</text>
+<text x="70" y="228" font-size="12" fill="#4B5563">② C:\Windows\Temp 에 파일 65,000개 초과 — 역할·기능 제거 시</text>
+<line x1="400" y1="244" x2="400" y2="264" stroke="#374151" stroke-width="2" marker-end="url(#m)"/>
+<rect x="40" y="270" width="720" height="66" rx="8" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
+<rect x="40" y="270" width="8" height="66" fill="#374151"/>
+<text x="70" y="296" font-size="15" font-weight="700" fill="#111827">3 — 그다음이 일반 이미지 복구</text>
+<text x="70" y="320" font-size="12" fill="#4B5563">DISM /CheckHealth 는 보고만 · 복구는 /RestoreHealth · 폐쇄망은 /Source 와 /LimitAccess</text>
+<line x1="40" y1="362" x2="760" y2="362" stroke="#E5E7EB" stroke-width="1"/>
+<text x="40" y="388" font-size="13" fill="#6B7280">시스템 예약 파티션 · VPN · .NET 은 Microsoft 1차 문서로 확인되지 않습니다.</text>
+<text x="40" y="412" font-size="13" fill="#6B7280">「근거가 없다」와 「틀렸다」는 다릅니다 — 다만 되돌리기 어려운 조치를 먼저 할 이유는 없습니다.</text>
+</g></svg>

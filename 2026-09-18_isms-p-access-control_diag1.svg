@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450"><rect x="0" y="0" width="800" height="450" fill="#ffffff"/><defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#374151"/></marker></defs><g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+<text x="40" y="36" font-size="20" font-weight="700" fill="#111827">2.6 접근통제 — 서버 운영자 몫은 두 항목</text>
+<rect x="40" y="64" width="350" height="200" rx="8" fill="#ffffff" stroke="#C0392B" stroke-width="2"/>
+<rect x="40" y="64" width="350" height="32" rx="8" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+<text x="215" y="86" font-size="14" font-weight="700" fill="#C0392B" text-anchor="middle">서버 운영자 주 소관</text>
+<text x="64" y="126" font-size="14" font-weight="700" fill="#111827">2.6.2 정보시스템 접근</text>
+<text x="64" y="148" font-size="12" fill="#4B5563">누가 · 어디서 · 어떤 방식으로 접근했는가</text>
+<text x="64" y="170" font-size="12" font-weight="700" fill="#C0392B">증적 = 이벤트 4624 로그온 유형</text>
+<line x1="64" y1="188" x2="366" y2="188" stroke="#E5E7EB" stroke-width="1"/>
+<text x="64" y="214" font-size="14" font-weight="700" fill="#111827">2.6.6 원격접근 통제</text>
+<text x="64" y="236" font-size="12" fill="#4B5563">승인 범위 안에서만 접근했는가</text>
+<text x="64" y="256" font-size="12" font-weight="700" fill="#C0392B">증적 = 유형 10 + 출발지 주소</text>
+<rect x="410" y="64" width="350" height="200" rx="8" fill="#ffffff" stroke="#9CA3AF" stroke-width="2"/>
+<rect x="410" y="64" width="350" height="32" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/>
+<text x="585" y="86" font-size="14" font-weight="700" fill="#374151" text-anchor="middle">타 부서 소관 · 자료 취합</text>
+<text x="434" y="122" font-size="13" fill="#4B5563">2.6.3 응용프로그램 접근 — 응용 개발</text>
+<text x="434" y="150" font-size="13" fill="#4B5563">2.6.4 데이터베이스 접근 — DBA</text>
+<text x="434" y="178" font-size="13" fill="#4B5563">2.6.5 무선 네트워크 접근 — 네트워크</text>
+<line x1="434" y1="196" x2="736" y2="196" stroke="#E5E7EB" stroke-width="1"/>
+<text x="434" y="222" font-size="13" fill="#111827" font-weight="700">경계 — 미리 나눠 둘 것</text>
+<text x="434" y="246" font-size="12" fill="#4B5563">2.6.1 네트워크 접근 / 2.6.7 인터넷 접속</text>
+<line x1="40" y1="300" x2="760" y2="300" stroke="#E5E7EB" stroke-width="1"/>
+<text x="40" y="326" font-size="13" fill="#6B7280">항목 번호와 항목명은 안정적이지만, 기준 문안과 증적 목록은 안내서 판본에 따라 달라집니다.</text>
+<text x="40" y="350" font-size="13" fill="#6B7280">문안이 필요하면 심사받는 시점의 KISA 안내서를 직접 확인하십시오.</text>
+<text x="40" y="382" font-size="13" fill="#6B7280">구분을 먼저 해두지 않으면 이미 만들어진 자료를 서버 쪽에서 다시 만드는 중복이 생깁니다.</text>
+</g></svg>
