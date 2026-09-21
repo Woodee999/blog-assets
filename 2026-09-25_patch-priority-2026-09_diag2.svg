@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="발표된 취약점을 악용 확인, 보유 제품, 노출 경로 순으로 걸러 실제 조치 대상으로 줄이는 깔때기 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">배제 조건을 먼저, 점수는 마지막에</text>
+
+    <!-- 깔때기 (왼쪽 영역, 중심 x=300) -->
+    <rect x="40" y="58" width="520" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="300" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">발표 전체 — 약 964건</text>
+    <text x="300" y="99" text-anchor="middle" font-size="11" fill="#6b7280">마이크로소프트 제품 전체 합계</text>
+    <path d="M300 110 L300 132" stroke="#1f2937" stroke-width="2" marker-end="url(#f1)"/>
+
+    <rect x="80" y="134" width="440" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="300" y="156" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">② 우리가 보유한 제품인가</text>
+    <text x="300" y="175" text-anchor="middle" font-size="11" fill="#6b7280">자산 인벤토리로 대조 — 여기서 대부분 사라짐</text>
+    <path d="M300 186 L300 208" stroke="#1f2937" stroke-width="2" marker-end="url(#f1)"/>
+
+    <rect x="120" y="210" width="360" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="300" y="232" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">③ 노출 경로가 있는가</text>
+    <text x="300" y="251" text-anchor="middle" font-size="11" fill="#6b7280">PR:N · AV:N · 해당 포트 개방 여부</text>
+    <path d="M300 262 L300 284" stroke="#1f2937" stroke-width="2" marker-end="url(#f1)"/>
+
+    <rect x="160" y="286" width="280" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="300" y="308" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">④ EPSS · CVSS로 정렬</text>
+    <text x="300" y="327" text-anchor="middle" font-size="11" fill="#6b7280">이 단계에서야 점수가 의미를 가짐</text>
+    <path d="M300 338 L300 360" stroke="#1f2937" stroke-width="2" marker-end="url(#f1)"/>
+
+    <rect x="176" y="362" width="248" height="46" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="3"/>
+    <text x="300" y="390" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">이번 주에 실제로 손댈 목록</text>
+
+    <!-- 우측: KEV 우회 경로 -->
+    <path d="M560 84 L680 84 L680 150" stroke="#b91c1c" stroke-width="2.5" fill="none" marker-end="url(#f2)"/>
+    <text x="620" y="76" text-anchor="middle" font-size="11" fill="#b91c1c">가장 먼저 확인</text>
+
+    <rect x="590" y="154" width="180" height="104" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="680" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">① KEV · Detected</text>
+    <text x="680" y="204" text-anchor="middle" font-size="12" fill="#1f2937">이번 달 2건</text>
+    <text x="680" y="224" text-anchor="middle" font-size="12" fill="#1f2937">나머지 단계 건너뜀</text>
+    <text x="680" y="246" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">72시간 내 착수</text>
+
+    <path d="M680 258 L680 385 L428 385" stroke="#b91c1c" stroke-width="2.5" fill="none" marker-end="url(#f2)"/>
+
+    <text x="40" y="436" font-size="11" fill="#6b7280">확실한 신호일수록 앞에 둡니다. EPSS로 먼저 자르면 이번 달 KEV 2건이 중간에 사라집니다.</text>
+  </g>
+  <defs>
+    <marker id="f1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+    <marker id="f2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+</svg>

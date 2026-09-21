@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="2026년 9월 CISA KEV 등재 항목을 운영체제 패치로 해결되는 것과 별도 조치가 필요한 것으로 나눈 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">9월 KEV — 월간 패치로 덮이는 부분과 아닌 부분</text>
+
+    <!-- 왼쪽 -->
+    <rect x="40" y="62" width="348" height="322" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="214" y="90" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">월간 누적 업데이트로 해결</text>
+    <text x="214" y="110" text-anchor="middle" font-size="12" fill="#6b7280">2건 · 담당은 Windows 운영자</text>
+
+    <rect x="64" y="126" width="300" height="72" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="80" y="150" font-size="13" font-weight="700" fill="#1f2937">CVE-2026-81963</text>
+    <text x="300" y="150" text-anchor="end" font-size="13" fill="#6b7280">7.8</text>
+    <text x="80" y="170" font-size="12" fill="#6b7280">Windows Update Stack</text>
+    <text x="80" y="188" font-size="12" fill="#1f2937">로컬 권한 상승 → SYSTEM</text>
+
+    <rect x="64" y="208" width="300" height="72" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="80" y="232" font-size="13" font-weight="700" fill="#1f2937">CVE-2026-85880</text>
+    <text x="300" y="232" text-anchor="end" font-size="13" fill="#6b7280">7.8</text>
+    <text x="80" y="252" font-size="12" fill="#6b7280">Windows ALPC</text>
+    <text x="80" y="270" font-size="12" fill="#1f2937">로컬 권한 상승 → SYSTEM</text>
+
+    <rect x="64" y="296" width="300" height="70" rx="5" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="80" y="320" font-size="12" font-weight="700" fill="#1f2937">조치</text>
+    <text x="80" y="340" font-size="12" fill="#1f2937">KB5124008 · KB5124012</text>
+    <text x="80" y="358" font-size="12" fill="#1f2937">KB5122871 · KB5122882</text>
+
+    <!-- 오른쪽 -->
+    <rect x="412" y="62" width="348" height="322" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="586" y="90" text-anchor="middle" font-size="15" font-weight="700" fill="#b91c1c">별도 조치가 필요</text>
+    <text x="586" y="110" text-anchor="middle" font-size="12" fill="#6b7280">4건 · 담당이 각각 다름</text>
+
+    <rect x="436" y="126" width="300" height="56" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="452" y="148" font-size="13" font-weight="700" fill="#1f2937">CVE-2026-85706</text>
+    <text x="720" y="148" text-anchor="end" font-size="13" fill="#b91c1c">10.0</text>
+    <text x="452" y="168" font-size="12" fill="#6b7280">GitLab — 인증 없이 파일 읽기</text>
+
+    <rect x="436" y="190" width="300" height="56" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="452" y="212" font-size="13" font-weight="700" fill="#1f2937">CVE-2026-84869</text>
+    <text x="720" y="212" text-anchor="end" font-size="13" fill="#b91c1c">9.9</text>
+    <text x="452" y="232" font-size="12" fill="#6b7280">ScreenConnect 클라이언트</text>
+
+    <rect x="436" y="254" width="300" height="56" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="452" y="276" font-size="13" font-weight="700" fill="#1f2937">CVE-2026-19490</text>
+    <text x="720" y="276" text-anchor="end" font-size="13" fill="#b91c1c">9.8</text>
+    <text x="452" y="296" font-size="12" fill="#6b7280">Citrix NetScaler — 인증 우회</text>
+
+    <rect x="436" y="318" width="300" height="56" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="452" y="340" font-size="13" font-weight="700" fill="#1f2937">CVE-2026-87491</text>
+    <text x="720" y="340" text-anchor="end" font-size="13" fill="#b91c1c">8.8</text>
+    <text x="452" y="360" font-size="12" fill="#6b7280">Chromium V8 — 재시작 필요</text>
+
+    <text x="40" y="416" font-size="12" fill="#6b7280">CVSS 순으로 줄을 세우면 실제로 SYSTEM까지 가는 왼쪽 2건이 맨 아래로 갑니다.</text>
+    <text x="40" y="434" font-size="12" fill="#6b7280">KEV는 점수와 별개의 축으로 둡니다.</text>
+  </g>
+</svg>

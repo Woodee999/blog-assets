@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="2026년 9월 패치 964건을 세 갈래로 나눠 적용 순서를 정하는 판단 흐름도">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">2026년 9월 패치 — 무엇을 먼저 볼 것인가</text>
+
+    <!-- 입력 -->
+    <rect x="300" y="56" width="200" height="46" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">당일 발표 약 964건</text>
+    <text x="400" y="95" text-anchor="middle" font-size="11" fill="#6b7280">누적 업데이트라 개별 선택 불가</text>
+
+    <path d="M400 102 L400 128" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+
+    <!-- 분기 라인 -->
+    <path d="M148 128 L652 128" stroke="#1f2937" stroke-width="2"/>
+    <path d="M148 128 L148 158" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+    <path d="M400 128 L400 158" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+    <path d="M652 128 L652 158" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+
+    <!-- 1 -->
+    <rect x="30" y="162" width="236" height="112" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="148" y="186" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">① 실제 악용 확인 (KEV)</text>
+    <text x="44" y="210" font-size="12" fill="#1f2937">CVE-2026-81963  Update Stack</text>
+    <text x="44" y="230" font-size="12" fill="#1f2937">CVE-2026-85880  ALPC</text>
+    <text x="44" y="252" font-size="11" fill="#6b7280">로컬 권한 상승 · CVSS 7.8</text>
+    <text x="44" y="268" font-size="11" fill="#6b7280">→ 사용자 단말 우선</text>
+
+    <!-- 2 -->
+    <rect x="282" y="162" width="236" height="112" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="186" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">② 무인증 원격 실행</text>
+    <text x="296" y="210" font-size="12" fill="#1f2937">CVE-2026-72982  Netlogon</text>
+    <text x="296" y="230" font-size="12" fill="#1f2937">CVE-2026-69730  DNS</text>
+    <text x="296" y="250" font-size="12" fill="#1f2937">CVE-2026-69525  RDS</text>
+    <text x="296" y="268" font-size="11" fill="#6b7280">→ 도메인 컨트롤러 우선</text>
+
+    <!-- 3 -->
+    <rect x="534" y="162" width="236" height="112" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="652" y="186" text-anchor="middle" font-size="14" font-weight="700" fill="#6b7280">③ 나머지</text>
+    <text x="548" y="212" font-size="12" fill="#6b7280">권한 상승 438건</text>
+    <text x="548" y="232" font-size="12" fill="#6b7280">원격 코드 실행 258건</text>
+    <text x="548" y="252" font-size="12" fill="#6b7280">정보 노출 173건 등</text>
+    <text x="548" y="270" font-size="11" fill="#6b7280">→ 정기 일정대로</text>
+
+    <!-- 합류 -->
+    <path d="M148 274 L148 306" stroke="#1f2937" stroke-width="2"/>
+    <path d="M400 274 L400 306" stroke="#1f2937" stroke-width="2"/>
+    <path d="M652 274 L652 306" stroke="#9ca3af" stroke-width="2"/>
+    <path d="M148 306 L652 306" stroke="#1f2937" stroke-width="2"/>
+    <path d="M400 306 L400 334" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+
+    <!-- 게이트 -->
+    <rect x="150" y="338" width="500" height="88" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="400" y="362" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">적용 전 확인: 이번 달 패치가 일으킨 장애 2건</text>
+    <text x="172" y="386" font-size="12" fill="#1f2937">· 클라이언트 — Machine Identity Isolation 으로 도메인 신뢰 끊김</text>
+    <text x="172" y="406" font-size="12" fill="#1f2937">· 서버 — 원격 데스크톱 서비스 연결·로그온 실패 (9/14 대역 외로 수정)</text>
+  </g>
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="KEV 신규 등재 항목을 주간 점검으로 처리할 때 자산 유형별로 담당과 조치 경로를 나눈 순서도">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">주간 KEV 점검 — 목록 읽기보다 대조가 일입니다</text>
+
+    <!-- 입력 -->
+    <rect x="290" y="56" width="220" height="46" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">지난주 신규 등재 목록</text>
+    <text x="400" y="95" text-anchor="middle" font-size="11" fill="#6b7280">주 1회 고정 · 패치 화요일과 별개</text>
+    <path d="M400 102 L400 124" stroke="#1f2937" stroke-width="2" marker-end="url(#k1)"/>
+
+    <!-- 대조 -->
+    <rect x="240" y="126" width="320" height="52" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="400" y="149" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">제품 인벤토리와 대조</text>
+    <text x="400" y="168" text-anchor="middle" font-size="11" fill="#6b7280">가장 오래 걸리는 단계 — 인벤토리가 없으면 매주 반복</text>
+
+    <!-- 분기 -->
+    <path d="M400 178 L400 198" stroke="#1f2937" stroke-width="2"/>
+    <path d="M120 198 L680 198" stroke="#1f2937" stroke-width="2"/>
+    <path d="M120 198 L120 222" stroke="#1f2937" stroke-width="2" marker-end="url(#k1)"/>
+    <path d="M307 198 L307 222" stroke="#1f2937" stroke-width="2" marker-end="url(#k1)"/>
+    <path d="M493 198 L493 222" stroke="#1f2937" stroke-width="2" marker-end="url(#k1)"/>
+    <path d="M680 198 L680 222" stroke="#9ca3af" stroke-width="2" marker-end="url(#k2)"/>
+
+    <!-- 4개 경로 -->
+    <rect x="34" y="224" width="172" height="120" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="120" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Windows</text>
+    <text x="50" y="272" font-size="11.5" fill="#1f2937">담당: 인프라</text>
+    <text x="50" y="292" font-size="11.5" fill="#1f2937">조치: 누적 업데이트</text>
+    <text x="50" y="312" font-size="11.5" fill="#1f2937">검증: 빌드 UBR</text>
+    <text x="50" y="332" font-size="11" fill="#6b7280">예) 81963 · 85880</text>
+
+    <rect x="221" y="224" width="172" height="120" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="307" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">경계 장비</text>
+    <text x="237" y="272" font-size="11.5" fill="#1f2937">담당: 네트워크</text>
+    <text x="237" y="292" font-size="11.5" fill="#1f2937">조치: 펌웨어 갱신</text>
+    <text x="237" y="312" font-size="11.5" fill="#1f2937">검증: 장비 버전</text>
+    <text x="237" y="332" font-size="11" fill="#6b7280">예) NetScaler 19490</text>
+
+    <rect x="407" y="224" width="172" height="120" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="493" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">애플리케이션</text>
+    <text x="423" y="272" font-size="11.5" fill="#1f2937">담당: 서비스 운영</text>
+    <text x="423" y="292" font-size="11.5" fill="#1f2937">조치: 보안 릴리스</text>
+    <text x="423" y="312" font-size="11.5" fill="#1f2937">검증: 앱 버전</text>
+    <text x="423" y="332" font-size="11" fill="#6b7280">예) GitLab 등</text>
+
+    <rect x="594" y="224" width="172" height="120" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="680" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#6b7280">해당 없음</text>
+    <text x="610" y="276" font-size="11.5" fill="#6b7280">그래도 기록합니다</text>
+    <text x="610" y="296" font-size="11.5" fill="#6b7280">"확인함 · 미보유"</text>
+    <text x="610" y="320" font-size="11" fill="#6b7280">확인하지 않은 것과</text>
+    <text x="610" y="336" font-size="11" fill="#6b7280">없는 것은 다릅니다</text>
+
+    <!-- 출력 -->
+    <path d="M120 344 L120 372 L680 372 L680 344" stroke="#1f2937" stroke-width="2" fill="none"/>
+    <path d="M307 344 L307 372" stroke="#1f2937" stroke-width="2"/>
+    <path d="M493 344 L493 372" stroke="#1f2937" stroke-width="2"/>
+    <path d="M400 372 L400 390" stroke="#1f2937" stroke-width="2" marker-end="url(#k1)"/>
+
+    <rect x="200" y="392" width="400" height="44" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="419" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">점검 기록 — 해당 여부 · 담당 · 전달일 · 기한</text>
+  </g>
+  <defs>
+    <marker id="k1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+    <marker id="k2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Windows 11 버전별 9월 정기 패치와 대역 외 패치의 빌드 번호 판정 기준을 정리한 표 형태 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">단말 빌드 판정 — winver 숫자로 읽는 법</text>
+
+    <!-- 예시 박스 -->
+    <rect x="60" y="58" width="680" height="72" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="80" y="84" font-size="12" fill="#6b7280">winver 표시 예</text>
+    <text x="80" y="112" font-size="17" font-weight="700" fill="#1f2937">버전 25H2 (OS 빌드 26200.9457)</text>
+    <text x="420" y="94" font-size="12" fill="#b91c1c">└ 앞 26200 = 버전 계열</text>
+    <text x="420" y="114" font-size="12" fill="#b91c1c">└ 뒤 9457 = 이 숫자로 판정</text>
+
+    <!-- 표 헤더 -->
+    <text x="76" y="168" font-size="13" font-weight="700" fill="#6b7280">버전</text>
+    <text x="236" y="168" font-size="13" font-weight="700" fill="#6b7280">9/8 정기</text>
+    <text x="426" y="168" font-size="13" font-weight="700" fill="#6b7280">9/14 대역 외</text>
+    <text x="616" y="168" font-size="13" font-weight="700" fill="#6b7280">판정 기준</text>
+    <path d="M60 178 L740 178" stroke="#1f2937" stroke-width="2"/>
+
+    <!-- 행 1 -->
+    <text x="76" y="212" font-size="14" font-weight="700" fill="#1f2937">Windows 11 25H2</text>
+    <text x="236" y="212" font-size="13" fill="#1f2937">KB5124008</text>
+    <text x="236" y="230" font-size="12" fill="#6b7280">26200.9445</text>
+    <text x="426" y="212" font-size="13" fill="#b91c1c">KB5129195</text>
+    <text x="426" y="230" font-size="12" fill="#6b7280">26200.9457</text>
+    <text x="616" y="220" font-size="13" font-weight="700" fill="#1f2937">UBR ≥ 9457</text>
+    <path d="M60 244 L740 244" stroke="#e5e7eb" stroke-width="1"/>
+
+    <!-- 행 2 -->
+    <text x="76" y="278" font-size="14" font-weight="700" fill="#1f2937">Windows 11 24H2</text>
+    <text x="236" y="278" font-size="13" fill="#1f2937">KB5124008</text>
+    <text x="236" y="296" font-size="12" fill="#6b7280">26100.9445</text>
+    <text x="426" y="278" font-size="13" fill="#b91c1c">KB5129195</text>
+    <text x="426" y="296" font-size="12" fill="#6b7280">26100.9457</text>
+    <text x="616" y="286" font-size="13" font-weight="700" fill="#1f2937">UBR ≥ 9457</text>
+    <path d="M60 310 L740 310" stroke="#e5e7eb" stroke-width="1"/>
+
+    <!-- 행 3 -->
+    <text x="76" y="344" font-size="14" font-weight="700" fill="#1f2937">Windows 11 26H1</text>
+    <text x="236" y="344" font-size="13" fill="#1f2937">KB5124012</text>
+    <text x="236" y="362" font-size="12" fill="#6b7280">28000.2954</text>
+    <text x="426" y="344" font-size="13" fill="#b91c1c">KB5129194</text>
+    <text x="426" y="362" font-size="12" fill="#6b7280">28000.2956</text>
+    <text x="616" y="352" font-size="13" font-weight="700" fill="#1f2937">UBR ≥ 2956</text>
+    <path d="M60 376 L740 376" stroke="#e5e7eb" stroke-width="1"/>
+
+    <!-- 행 4 -->
+    <text x="76" y="408" font-size="14" font-weight="700" fill="#b91c1c">Windows 10</text>
+    <text x="236" y="408" font-size="13" fill="#b91c1c">해당 없음 — 2025년 10월 14일 지원 종료</text>
+    <text x="616" y="408" font-size="13" font-weight="700" fill="#b91c1c">교체 일정으로</text>
+  </g>
+</svg>

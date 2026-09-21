@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="사용자 행동이 필요 없는 Office 취약점과 파일을 열어야 성립하는 취약점의 경로를 비교한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">UI:N 과 UI:R — 같은 메일, 다른 경로</text>
+
+    <!-- 공통 출발 -->
+    <rect x="300" y="56" width="200" height="46" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">조작된 첨부가 도착</text>
+    <text x="400" y="95" text-anchor="middle" font-size="11" fill="#6b7280">PR:N — 계정 없이 발송 가능</text>
+
+    <path d="M400 102 L400 122" stroke="#1f2937" stroke-width="2"/>
+    <path d="M220 122 L580 122" stroke="#1f2937" stroke-width="2"/>
+    <path d="M220 122 L220 150" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#o2)"/>
+    <path d="M580 122 L580 150" stroke="#1f2937" stroke-width="2" marker-end="url(#o1)"/>
+
+    <!-- 왼쪽: UI:N -->
+    <rect x="46" y="154" width="348" height="246" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="220" y="180" text-anchor="middle" font-size="15" font-weight="700" fill="#b91c1c">UI:N — 사용자 행동 불필요</text>
+
+    <rect x="70" y="198" width="300" height="40" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="220" y="223" text-anchor="middle" font-size="13" fill="#1f2937">파일·메일이 단말에 도착</text>
+    <path d="M220 238 L220 258" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#o2)"/>
+
+    <rect x="70" y="262" width="300" height="40" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="220" y="287" text-anchor="middle" font-size="13" fill="#1f2937">사용자 조작 없이 처리됨</text>
+    <path d="M220 302 L220 322" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#o2)"/>
+
+    <rect x="70" y="326" width="300" height="56" rx="5" fill="#ffffff" stroke="#b91c1c" stroke-width="2"/>
+    <text x="220" y="349" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">코드 실행 — 클릭 없음</text>
+    <text x="220" y="369" text-anchor="middle" font-size="11" fill="#6b7280">CVE-2026-78510 / 78509 (9.8)</text>
+
+    <!-- 오른쪽: UI:R -->
+    <rect x="406" y="154" width="348" height="246" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="580" y="180" text-anchor="middle" font-size="15" font-weight="700" fill="#6b7280">UI:R — 사용자 행동 필요</text>
+
+    <rect x="430" y="198" width="300" height="40" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="580" y="223" text-anchor="middle" font-size="13" fill="#1f2937">첨부를 직접 열기</text>
+    <path d="M580 238 L580 258" stroke="#1f2937" stroke-width="2" marker-end="url(#o1)"/>
+
+    <rect x="430" y="262" width="300" height="40" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="580" y="287" text-anchor="middle" font-size="13" fill="#1f2937">보호된 보기 해제 등 추가 동작</text>
+    <path d="M580 302 L580 322" stroke="#1f2937" stroke-width="2" marker-end="url(#o1)"/>
+
+    <rect x="430" y="326" width="300" height="56" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="580" y="349" text-anchor="middle" font-size="13" font-weight="700" fill="#6b7280">코드 실행 — 교육이 개입 가능</text>
+    <text x="580" y="369" text-anchor="middle" font-size="11" fill="#6b7280">CVE-2026-78525 (8.8)</text>
+
+    <text x="46" y="428" font-size="11" fill="#6b7280">왼쪽은 교육이 작동하지 않습니다. 미리 보기 창이 경로인지는 CVE별 MSRC FAQ로 확인합니다.</text>
+  </g>
+  <defs>
+    <marker id="o1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+    <marker id="o2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+</svg>

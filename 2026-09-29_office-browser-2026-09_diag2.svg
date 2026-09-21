@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Windows 누적 업데이트와 Office 클릭투런 업데이트, 브라우저 자동 업데이트가 서로 다른 경로와 시점으로 반영되는 구조를 비교한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">"9월 패치 적용 완료"가 세 곳에서 다른 뜻입니다</text>
+
+    <!-- 타임라인 축 -->
+    <path d="M200 78 L760 78" stroke="#d1d5db" stroke-width="2"/>
+    <text x="240" y="68" text-anchor="middle" font-size="11" fill="#6b7280">9/4</text>
+    <text x="380" y="68" text-anchor="middle" font-size="11" fill="#6b7280">9/8</text>
+    <text x="520" y="68" text-anchor="middle" font-size="11" fill="#6b7280">9/10</text>
+    <text x="660" y="68" text-anchor="middle" font-size="11" fill="#6b7280">9/14</text>
+    <path d="M240 72 L240 84" stroke="#9ca3af" stroke-width="2"/>
+    <path d="M380 72 L380 84" stroke="#9ca3af" stroke-width="2"/>
+    <path d="M520 72 L520 84" stroke="#9ca3af" stroke-width="2"/>
+    <path d="M660 72 L660 84" stroke="#9ca3af" stroke-width="2"/>
+
+    <!-- 행 1: Windows -->
+    <rect x="30" y="100" width="160" height="80" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="110" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">Windows</text>
+    <text x="110" y="148" text-anchor="middle" font-size="11" fill="#6b7280">누적 업데이트</text>
+    <text x="110" y="166" text-anchor="middle" font-size="11" fill="#6b7280">Windows Update</text>
+    <rect x="320" y="116" width="120" height="48" rx="5" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="380" y="136" text-anchor="middle" font-size="12" fill="#1f2937">정기 패치</text>
+    <text x="380" y="153" text-anchor="middle" font-size="11" fill="#6b7280">KB5124008</text>
+    <rect x="600" y="116" width="120" height="48" rx="5" fill="#ffffff" stroke="#b91c1c" stroke-width="2"/>
+    <text x="660" y="136" text-anchor="middle" font-size="12" fill="#b91c1c">대역 외</text>
+    <text x="660" y="153" text-anchor="middle" font-size="11" fill="#6b7280">KB5129195</text>
+
+    <!-- 행 2: Office -->
+    <rect x="30" y="196" width="160" height="96" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="110" y="224" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">Office</text>
+    <text x="110" y="244" text-anchor="middle" font-size="11" fill="#6b7280">클릭투런 · 별도 CDN</text>
+    <text x="110" y="262" text-anchor="middle" font-size="11" fill="#b91c1c">Windows 패치에</text>
+    <text x="110" y="278" text-anchor="middle" font-size="11" fill="#b91c1c">포함되지 않음</text>
+
+    <rect x="300" y="206" width="160" height="76" rx="5" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="380" y="228" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2937">보안 수정</text>
+    <text x="380" y="248" text-anchor="middle" font-size="11" fill="#1f2937">모든 채널 동시</text>
+    <text x="380" y="266" text-anchor="middle" font-size="11" fill="#6b7280">매월 둘째 화요일</text>
+
+    <rect x="480" y="206" width="280" height="76" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="620" y="228" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280">확인할 것</text>
+    <text x="620" y="248" text-anchor="middle" font-size="11" fill="#1f2937">UpdatesEnabled 꺼짐이 의도인가</text>
+    <text x="620" y="266" text-anchor="middle" font-size="11" fill="#1f2937">지원되는 빌드에 있는가</text>
+
+    <!-- 행 3: 브라우저 -->
+    <rect x="30" y="308" width="160" height="80" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="110" y="336" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">브라우저</text>
+    <text x="110" y="356" text-anchor="middle" font-size="11" fill="#6b7280">자동 업데이트</text>
+    <text x="110" y="374" text-anchor="middle" font-size="11" fill="#6b7280">재시작해야 완료</text>
+
+    <rect x="200" y="324" width="122" height="48" rx="5" fill="#ffffff" stroke="#b91c1c" stroke-width="2"/>
+    <text x="261" y="344" text-anchor="middle" font-size="10.5" fill="#b91c1c">Edge 152.0.4191.66</text>
+    <text x="261" y="361" text-anchor="middle" font-size="11" fill="#6b7280">87491 수정</text>
+
+    <rect x="332" y="324" width="108" height="48" rx="5" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="386" y="344" text-anchor="middle" font-size="12" fill="#1f2937">Chrome 153</text>
+    <text x="386" y="361" text-anchor="middle" font-size="11" fill="#6b7280">87491 수정</text>
+
+    <rect x="450" y="324" width="140" height="48" rx="5" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="520" y="344" text-anchor="middle" font-size="12" fill="#6b7280">Edge 153.0.4234.32</text>
+    <text x="520" y="361" text-anchor="middle" font-size="11" fill="#6b7280">이후 9/17 · 9/18</text>
+
+    <text x="30" y="422" font-size="11" fill="#6b7280">Windows만 보고 "적용 완료"로 닫으면 Office와 브라우저가 남습니다. 점검 항목을 셋으로 나눠 둡니다.</text>
+  </g>
+</svg>
