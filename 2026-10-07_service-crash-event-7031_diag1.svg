@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="이벤트 7031이 알려주는 정보와 알려주지 않는 정보를 나누고 원인을 찾기 위해 봐야 할 로그를 표시한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">7031은 결과만 적혀 있습니다</text>
+
+    <!-- 이벤트 메시지 -->
+    <rect x="40" y="58" width="720" height="76" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="58" y="82" font-size="12" fill="#6b7280">System 로그 · Service Control Manager · 이벤트 ID 7031 (EVENT_SERVICE_CRASH)</text>
+    <text x="58" y="110" font-size="13.5" fill="#1f2937">"<tspan font-weight="700">Spooler</tspan> 서비스가 예기치 않게 종료되었습니다. 이런 동작이 <tspan font-weight="700">4</tspan>번 발생했습니다.</text>
+    <text x="58" y="128" font-size="13.5" fill="#1f2937">다음 조치를 <tspan font-weight="700">60000</tspan>밀리초 안에 수행합니다: <tspan font-weight="700">서비스 다시 시작</tspan>."</text>
+
+    <!-- 있는 것 -->
+    <rect x="40" y="150" width="350" height="134" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="58" y="176" font-size="14" font-weight="700" fill="#1f2937">여기서 얻는 것</text>
+    <text x="58" y="202" font-size="12.5" fill="#1f2937">· 어떤 서비스가 죽었는가</text>
+    <text x="58" y="226" font-size="12.5" fill="#1f2937">· 몇 번째인가 — 반복 여부 판단</text>
+    <text x="58" y="250" font-size="12.5" fill="#1f2937">· 복구 설정이 무엇으로 되어 있는가</text>
+    <text x="58" y="272" font-size="11.5" fill="#6b7280">횟수는 카운터 초기화 주기가 지나면 1부터 다시</text>
+
+    <!-- 없는 것 -->
+    <rect x="410" y="150" width="350" height="134" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="428" y="176" font-size="14" font-weight="700" fill="#b91c1c">여기 없는 것</text>
+    <text x="428" y="202" font-size="12.5" fill="#1f2937">· 종료 코드</text>
+    <text x="428" y="226" font-size="12.5" fill="#1f2937">· 예외 정보 · 스택</text>
+    <text x="428" y="250" font-size="12.5" fill="#1f2937">· 어느 모듈에서 문제가 났는가</text>
+    <text x="428" y="272" font-size="11.5" fill="#b91c1c">→ 이 이벤트만 검색해서는 원인이 안 나옵니다</text>
+
+    <path d="M585 284 L585 308" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#e1)"/>
+
+    <!-- 원인이 있는 곳 -->
+    <rect x="40" y="312" width="720" height="108" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="58" y="338" font-size="14" font-weight="700" fill="#1f2937">원인은 같은 시각의 다른 줄에 있습니다 — 앞뒤 2분을 잘라 봅니다</text>
+    <text x="58" y="364" font-size="12.5" fill="#1f2937">Application 1000 (Application Error)</text>
+    <text x="430" y="364" font-size="12.5" fill="#6b7280">오류 모듈 이름이 조사 대상</text>
+    <text x="58" y="386" font-size="12.5" fill="#1f2937">Application 1026 (.NET Runtime)</text>
+    <text x="430" y="386" font-size="12.5" fill="#6b7280">관리 코드 예외 · 스택 포함</text>
+    <text x="58" y="408" font-size="12.5" fill="#1f2937">System 디스크·저장소 경고 / Windows Update 이벤트</text>
+    <text x="430" y="408" font-size="12.5" fill="#6b7280">자원 문제 또는 패치 직후 회귀</text>
+  </g>
+  <defs>
+    <marker id="e1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+</svg>

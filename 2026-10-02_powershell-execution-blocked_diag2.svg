@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="실행 정책 범위별 우선순위와 그룹 정책이 사용자 설정을 덮는 구조를 표시한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">실행 정책은 범위가 다섯이고, 위가 이깁니다</text>
+
+    <text x="46" y="70" font-size="12" font-weight="700" fill="#b91c1c">우선순위 높음</text>
+    <text x="46" y="388" font-size="12" font-weight="700" fill="#6b7280">우선순위 낮음</text>
+    <path d="M150 62 L150 392" stroke="#d1d5db" stroke-width="2"/>
+
+    <rect x="180" y="58" width="420" height="52" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="200" y="82" font-size="14" font-weight="700" fill="#b91c1c">MachinePolicy</text>
+    <text x="200" y="101" font-size="11.5" fill="#6b7280">그룹 정책 (컴퓨터) — 여기에 값이 있으면 아래는 무시됩니다</text>
+    <text x="620" y="88" font-size="12" fill="#b91c1c">사용자가</text>
+    <text x="620" y="105" font-size="12" fill="#b91c1c">바꿀 수 없음</text>
+
+    <rect x="180" y="120" width="420" height="52" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="200" y="144" font-size="14" font-weight="700" fill="#b91c1c">UserPolicy</text>
+    <text x="200" y="163" font-size="11.5" fill="#6b7280">그룹 정책 (사용자)</text>
+    <text x="620" y="150" font-size="12" fill="#b91c1c">Set-ExecutionPolicy</text>
+    <text x="620" y="167" font-size="12" fill="#b91c1c">가 먹히지 않음</text>
+
+    <rect x="180" y="182" width="420" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="200" y="206" font-size="14" font-weight="700" fill="#1f2937">Process</text>
+    <text x="200" y="225" font-size="11.5" fill="#6b7280">현재 세션만 — 진단할 때 쓰는 범위</text>
+    <text x="620" y="214" font-size="12" fill="#6b7280">-Scope Process</text>
+
+    <rect x="180" y="244" width="420" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="200" y="268" font-size="14" font-weight="700" fill="#1f2937">CurrentUser</text>
+    <text x="200" y="287" font-size="11.5" fill="#6b7280">이 사용자에게만 적용</text>
+
+    <rect x="180" y="306" width="420" height="52" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="200" y="330" font-size="14" font-weight="700" fill="#1f2937">LocalMachine</text>
+    <text x="200" y="349" font-size="11.5" fill="#6b7280">컴퓨터 전체 — 관리자 권한 필요</text>
+
+    <text x="46" y="424" font-size="11.5" fill="#6b7280">기본값: Windows PowerShell 5.1 — 클라이언트 Restricted · 서버 RemoteSigned / PowerShell 7 — 모두 RemoteSigned</text>
+    <text x="46" y="442" font-size="11.5" fill="#6b7280">Get-ExecutionPolicy -List 로 다섯 값을 한 번에 봅니다. 유효 값과 다르면 위쪽 범위가 덮고 있는 것입니다.</text>
+  </g>
+</svg>

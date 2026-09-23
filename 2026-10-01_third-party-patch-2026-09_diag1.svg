@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="소프트웨어를 업데이트 경로 네 가지로 나누고 각각 관리자가 확인해야 할 항목을 표시한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">고쳐지는 방식이 넷으로 갈립니다</text>
+
+    <text x="40" y="66" font-size="12" font-weight="700" fill="#6b7280">관리 부담 적음</text>
+    <text x="760" y="66" text-anchor="end" font-size="12" font-weight="700" fill="#b91c1c">관리 부담 큼</text>
+    <path d="M40 76 L760 76" stroke="#d1d5db" stroke-width="2"/>
+
+    <!-- 1 -->
+    <rect x="30" y="92" width="360" height="150" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="118" font-size="14" font-weight="700" fill="#1f2937">① Windows Update</text>
+    <text x="48" y="144" font-size="12" fill="#6b7280">Windows · .NET · Defender 정의</text>
+    <text x="48" y="172" font-size="12" fill="#1f2937">할 일: 배포 승인</text>
+    <text x="48" y="196" font-size="12" fill="#1f2937">보이는 곳: 관리 도구 준수 현황</text>
+    <text x="48" y="224" font-size="11.5" fill="#6b7280">패치 적용률 숫자에 들어가는 유일한 항목</text>
+
+    <!-- 2 -->
+    <rect x="410" y="92" width="360" height="150" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="428" y="118" font-size="14" font-weight="700" fill="#1f2937">② 제품 자체 업데이터</text>
+    <text x="428" y="144" font-size="12" fill="#6b7280">Chrome · Edge · 백업 에이전트</text>
+    <text x="428" y="172" font-size="12" fill="#1f2937">할 일: 업데이트 기능이 살아 있는지</text>
+    <text x="428" y="196" font-size="12" fill="#1f2937">확인 방법: 버전 수집 후 분포 확인</text>
+    <text x="428" y="224" font-size="11.5" fill="#b91c1c">프록시 차단 · 서비스 중지로 조용히 멈춤</text>
+
+    <!-- 3 -->
+    <rect x="30" y="256" width="360" height="150" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="282" font-size="14" font-weight="700" fill="#1f2937">③ 관리자가 직접 설치</text>
+    <text x="48" y="308" font-size="12" fill="#6b7280">업무용 클라이언트 · 드라이버 · 유틸리티</text>
+    <text x="48" y="336" font-size="12" fill="#1f2937">할 일: 버전 확인과 재배포 일정</text>
+    <text x="48" y="360" font-size="12" fill="#1f2937">확인 방법: 제거 항목 레지스트리 수집</text>
+    <text x="48" y="388" font-size="11.5" fill="#6b7280">32비트 · 사용자별 경로를 빼면 절반이 사라짐</text>
+
+    <!-- 4 -->
+    <rect x="410" y="256" width="360" height="150" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="428" y="282" font-size="14" font-weight="700" fill="#b91c1c">④ 다른 제품에 묶여 들어옴</text>
+    <text x="428" y="308" font-size="12" fill="#6b7280">WebView2 런타임 · 재배포 패키지 · 내장 JRE</text>
+    <text x="428" y="336" font-size="12" fill="#1f2937">할 일: 존재 자체를 먼저 찾기</text>
+    <text x="428" y="360" font-size="12" fill="#1f2937">확인 방법: 런타임 레지스트리 직접 조회</text>
+    <text x="428" y="388" font-size="11.5" fill="#b91c1c">설치한 기억이 없어 목록에도 없음</text>
+
+    <text x="40" y="432" font-size="11" fill="#6b7280">"패치 적용률 100%"는 ① 만 센 숫자입니다. ②③④ 는 별도 목록 없이는 세지지 않습니다.</text>
+  </g>
+</svg>

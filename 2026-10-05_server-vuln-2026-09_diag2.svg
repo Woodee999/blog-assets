@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="외부 노출 서버부터 Hyper-V 호스트까지 서버 역할별 패치 적용 순서와 각 단계의 확인 항목을 정리한 순서도">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">노출된 곳부터, 되돌리기 어려운 곳은 나중에</text>
+
+    <text x="70" y="62" font-size="12" font-weight="700" fill="#6b7280">순서</text>
+    <text x="150" y="62" font-size="12" font-weight="700" fill="#6b7280">대상</text>
+    <text x="430" y="62" font-size="12" font-weight="700" fill="#6b7280">적용 후 확인</text>
+    <path d="M40 70 L760 70" stroke="#1f2937" stroke-width="2"/>
+
+    <circle cx="70" cy="102" r="14" fill="#b91c1c"/>
+    <text x="70" y="107" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">1</text>
+    <text x="150" y="98" font-size="13.5" font-weight="700" fill="#b91c1c">외부 노출 서버</text>
+    <text x="150" y="116" font-size="11.5" fill="#6b7280">SSTP VPN · RD 게이트웨이</text>
+    <text x="430" y="98" font-size="12" fill="#1f2937">외부 접속 재개 확인</text>
+    <text x="430" y="116" font-size="11.5" fill="#6b7280">듣고 있는 포트 재점검</text>
+    <path d="M40 130 L760 130" stroke="#e5e7eb" stroke-width="1"/>
+
+    <circle cx="70" cy="162" r="14" fill="#1f2937"/>
+    <text x="70" y="167" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">2</text>
+    <text x="150" y="158" font-size="13.5" font-weight="700" fill="#1f2937">테스트 DC 1대</text>
+    <text x="150" y="176" font-size="11.5" fill="#6b7280">복제로 엮여 있어 한 대만 먼저</text>
+    <text x="430" y="158" font-size="12" fill="#1f2937">dcdiag /test:replications</text>
+    <text x="430" y="176" font-size="11.5" fill="#6b7280">repadmin /replsummary</text>
+    <path d="M40 190 L760 190" stroke="#e5e7eb" stroke-width="1"/>
+
+    <circle cx="70" cy="222" r="14" fill="#1f2937"/>
+    <text x="70" y="227" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">3</text>
+    <text x="150" y="218" font-size="13.5" font-weight="700" fill="#1f2937">DNS · DHCP</text>
+    <text x="150" y="236" font-size="11.5" fill="#6b7280">DC 겸용이면 2와 함께</text>
+    <text x="430" y="218" font-size="12" fill="#1f2937">Resolve-DnsName -Server localhost</text>
+    <text x="430" y="236" font-size="11.5" fill="#6b7280">Get-DhcpServerv4Scope 상태</text>
+    <path d="M40 250 L760 250" stroke="#e5e7eb" stroke-width="1"/>
+
+    <circle cx="70" cy="282" r="14" fill="#b91c1c"/>
+    <text x="70" y="287" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">4</text>
+    <text x="150" y="278" font-size="13.5" font-weight="700" fill="#b91c1c">RDS 세션 호스트</text>
+    <text x="150" y="296" font-size="11.5" fill="#b91c1c">9/14 대역 외까지 함께</text>
+    <text x="430" y="278" font-size="12" fill="#1f2937">세션 접속 · 재연결</text>
+    <text x="430" y="296" font-size="11.5" fill="#6b7280">다음 근무일 아침 한 번 더</text>
+    <path d="M40 310 L760 310" stroke="#e5e7eb" stroke-width="1"/>
+
+    <circle cx="70" cy="342" r="14" fill="#1f2937"/>
+    <text x="70" y="347" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">5</text>
+    <text x="150" y="338" font-size="13.5" font-weight="700" fill="#1f2937">Hyper-V 호스트</text>
+    <text x="150" y="356" font-size="11.5" fill="#6b7280">게스트 정지를 수반 — 복구 시간이 김</text>
+    <text x="430" y="338" font-size="12" fill="#1f2937">게스트 기동 순서 확인</text>
+    <text x="430" y="356" font-size="11.5" fill="#6b7280">자동 시작 서비스 상태</text>
+    <path d="M40 370 L760 370" stroke="#e5e7eb" stroke-width="1"/>
+
+    <circle cx="70" cy="400" r="14" fill="#9ca3af"/>
+    <text x="70" y="405" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">6</text>
+    <text x="150" y="398" font-size="13.5" font-weight="700" fill="#6b7280">나머지 파일 · 응용 서버</text>
+    <text x="150" y="416" font-size="11.5" fill="#6b7280">정기 작업 창에서</text>
+    <text x="430" y="404" font-size="12" fill="#6b7280">공통 — 자동 시작인데 멈춘 서비스</text>
+  </g>
+</svg>

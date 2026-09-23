@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="설치된 소프트웨어 목록을 만들고 업데이트 경로별로 나눠 점검 주기를 배정하는 절차 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">목록을 먼저 만들고, 주기를 나눠 답니다</text>
+
+    <!-- 수집 -->
+    <rect x="40" y="62" width="220" height="118" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="150" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">① 수집 (분기 1회)</text>
+    <text x="58" y="114" font-size="12" fill="#1f2937">제거 항목 레지스트리 3경로</text>
+    <text x="58" y="134" font-size="11.5" fill="#6b7280">HKLM · WOW6432Node · HKCU</text>
+    <text x="58" y="158" font-size="12" fill="#1f2937">winget (Win11 · Server 2025)</text>
+    <text x="58" y="174" font-size="11.5" fill="#6b7280">1차 선별용</text>
+
+    <path d="M260 121 L296 121" stroke="#1f2937" stroke-width="2" marker-end="url(#t1)"/>
+
+    <!-- 집계 -->
+    <rect x="300" y="62" width="200" height="118" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">② 집계</text>
+    <text x="318" y="116" font-size="12" fill="#1f2937">제품 이름 + 버전으로</text>
+    <text x="318" y="136" font-size="12" fill="#1f2937">몇 대인지 센다</text>
+    <text x="318" y="162" font-size="11.5" fill="#b91c1c">버전이 흩어져 있으면</text>
+    <text x="318" y="176" font-size="11.5" fill="#b91c1c">업데이트 경로가 끊긴 단말</text>
+
+    <path d="M500 121 L536 121" stroke="#1f2937" stroke-width="2" marker-end="url(#t1)"/>
+
+    <!-- 담당 -->
+    <rect x="540" y="62" width="220" height="118" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="650" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">③ 경로 표시</text>
+    <text x="558" y="116" font-size="12" fill="#1f2937">제품마다 한 줄 더 적는다</text>
+    <text x="558" y="140" font-size="12" fill="#6b7280">"누가 업데이트하는가"</text>
+    <text x="558" y="166" font-size="11.5" fill="#6b7280">자동 / 관리자 / 번들</text>
+
+    <path d="M400 180 L400 208" stroke="#1f2937" stroke-width="2" marker-end="url(#t1)"/>
+
+    <!-- 주기 배정 -->
+    <rect x="40" y="212" width="720" height="60" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="238" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">④ 주기 배정 — 목록 상위 열 개 남짓이 대부분의 단말을 덮습니다</text>
+    <text x="400" y="260" text-anchor="middle" font-size="11.5" fill="#6b7280">전부 똑같이 챙기려다 아무것도 못 챙기는 쪽이 더 흔한 실패입니다</text>
+
+    <path d="M180 272 L180 296" stroke="#1f2937" stroke-width="2" marker-end="url(#t1)"/>
+    <path d="M400 272 L400 296" stroke="#1f2937" stroke-width="2" marker-end="url(#t1)"/>
+    <path d="M620 272 L620 296" stroke="#b91c1c" stroke-width="2" marker-end="url(#t2)"/>
+
+    <rect x="40" y="300" width="280" height="110" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="180" y="326" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">월 1회 — 보안 공지 확인</text>
+    <text x="58" y="352" font-size="12" fill="#6b7280">목록에 있는 제품만 본다</text>
+    <text x="58" y="376" font-size="12" fill="#1f2937">산출물: 해당 / 미해당 표</text>
+    <text x="58" y="398" font-size="11.5" fill="#6b7280">해당 없음도 기록한다</text>
+
+    <rect x="336" y="300" width="128" height="110" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="400" y="326" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">분기 1회</text>
+    <text x="400" y="352" text-anchor="middle" font-size="12" fill="#6b7280">목록 재수집</text>
+    <text x="400" y="376" text-anchor="middle" font-size="12" fill="#6b7280">꼬리 제품도</text>
+    <text x="400" y="394" text-anchor="middle" font-size="12" fill="#6b7280">이때 훑는다</text>
+
+    <rect x="480" y="300" width="280" height="110" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="620" y="326" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">수시 — 실제 악용 확인 시</text>
+    <text x="498" y="352" font-size="12" fill="#1f2937">우리 제품이 목록에 뜨면</text>
+    <text x="498" y="376" font-size="12" fill="#1f2937">담당과 기한을 즉시 배정</text>
+    <text x="498" y="398" font-size="11.5" fill="#6b7280">예) 원격 지원 도구 · 브라우저 런타임</text>
+  </g>
+  <defs>
+    <marker id="t1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+    <marker id="t2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+</svg>

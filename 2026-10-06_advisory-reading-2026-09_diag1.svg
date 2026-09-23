@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="취약점 공지에서 영향 버전, 전제 조건, 피해 범위 세 가지를 뽑아 자산 목록과 대조하는 절차를 나타낸 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">공지는 제품 상태를, 우리는 자산 상태를 봅니다</text>
+
+    <rect x="40" y="58" width="220" height="50" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="150" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">취약점 공지 1건</text>
+    <text x="150" y="99" text-anchor="middle" font-size="11" fill="#6b7280">제품의 상태를 말한다</text>
+
+    <path d="M150 108 L150 132" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+
+    <!-- 3 추출 -->
+    <rect x="40" y="136" width="220" height="60" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="56" y="160" font-size="13" font-weight="700" fill="#1f2937">① 영향 버전</text>
+    <text x="56" y="182" font-size="11.5" fill="#6b7280">"이 버전 미만" = 고쳐진 버전</text>
+
+    <rect x="40" y="204" width="220" height="60" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="56" y="228" font-size="13" font-weight="700" fill="#1f2937">② 전제 조건</text>
+    <text x="56" y="250" font-size="11.5" fill="#6b7280">벡터의 AV · PR · UI</text>
+
+    <rect x="40" y="272" width="220" height="60" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="56" y="296" font-size="13" font-weight="700" fill="#b91c1c">③ 피해 범위</text>
+    <text x="56" y="318" font-size="11.5" fill="#6b7280">벡터의 S — 밖으로 번지는가</text>
+
+    <!-- 화살표 -->
+    <path d="M264 166 L316 166" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+    <path d="M264 234 L316 234" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+    <path d="M264 302 L316 302" stroke="#b91c1c" stroke-width="2" marker-end="url(#a2)"/>
+
+    <!-- 우리 자료 -->
+    <rect x="320" y="136" width="270" height="60" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="336" y="160" font-size="13" font-weight="700" fill="#6b7280">대조할 우리 자료</text>
+    <text x="336" y="182" font-size="12" fill="#1f2937">단말·서버 빌드 번호, 제품 버전 목록</text>
+
+    <rect x="320" y="204" width="270" height="60" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="336" y="228" font-size="13" font-weight="700" fill="#6b7280">대조할 우리 자료</text>
+    <text x="336" y="250" font-size="12" fill="#1f2937">방화벽 규칙, 관리자 권한 부여 현황</text>
+
+    <rect x="320" y="272" width="270" height="60" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="336" y="296" font-size="13" font-weight="700" fill="#6b7280">대조할 우리 자료</text>
+    <text x="336" y="318" font-size="12" fill="#1f2937">가상화 호스트 · 경계 구성 요소 목록</text>
+
+    <path d="M594 234 L636 234" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+
+    <!-- 결과 -->
+    <rect x="640" y="136" width="130" height="196" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="3"/>
+    <text x="705" y="176" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">판단</text>
+    <text x="705" y="206" text-anchor="middle" font-size="12" fill="#1f2937">해당 / 해당 없음</text>
+    <text x="705" y="232" text-anchor="middle" font-size="12" fill="#1f2937">대상 수</text>
+    <text x="705" y="258" text-anchor="middle" font-size="12" fill="#1f2937">기한</text>
+    <text x="705" y="284" text-anchor="middle" font-size="12" fill="#1f2937">담당</text>
+    <text x="705" y="312" text-anchor="middle" font-size="11" fill="#6b7280">근거를 함께 적는다</text>
+
+    <rect x="40" y="356" width="730" height="64" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="60" y="380" font-size="12.5" fill="#1f2937">목록이 없으면 공지를 아무리 잘 읽어도 "아마 해당될 것 같다"에서 끝납니다.</text>
+    <text x="60" y="404" font-size="12.5" fill="#6b7280">"해당 없음"도 왜 없는지와 함께 남겨야 다음 달에 같은 조사를 반복하지 않습니다.</text>
+  </g>
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/>
+    </marker>
+  </defs>
+</svg>
