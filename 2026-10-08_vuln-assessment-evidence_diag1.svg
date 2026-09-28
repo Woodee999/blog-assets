@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="주요정보통신기반시설의 법정 점검 주기와 조직이 정하는 주기를 비교하고 각각의 증적 요구를 정리한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">주기는 어디서 오는가</text>
+
+    <!-- 법정 -->
+    <rect x="30" y="58" width="360" height="222" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="50" y="86" font-size="14.5" font-weight="700" fill="#1f2937">주요정보통신기반시설</text>
+    <text x="50" y="106" font-size="11.5" fill="#6b7280">정보통신기반 보호법 제9조 · 시행령 제17조</text>
+
+    <rect x="50" y="120" width="320" height="42" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="66" y="138" font-size="12.5" fill="#1f2937">지정된 때</text>
+    <text x="66" y="156" font-size="12.5" font-weight="700" fill="#1f2937">지정 후 6월 이내 — 최초 분석·평가</text>
+
+    <rect x="50" y="170" width="320" height="42" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="66" y="188" font-size="12.5" fill="#1f2937">그 이후</text>
+    <text x="66" y="206" font-size="12.5" font-weight="700" fill="#1f2937">매년</text>
+
+    <rect x="50" y="220" width="320" height="42" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="66" y="238" font-size="12.5" fill="#1f2937">중앙행정기관의 장이 명령</text>
+    <text x="66" y="256" font-size="12.5" font-weight="700" fill="#1f2937">명령을 받은 날부터 6개월 이내</text>
+
+    <!-- 자율 -->
+    <rect x="410" y="58" width="360" height="222" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="430" y="86" font-size="14.5" font-weight="700" fill="#1f2937">그 밖의 조직</text>
+    <text x="430" y="106" font-size="11.5" fill="#6b7280">ISMS-P 2.11.2 취약점 점검 및 조치</text>
+
+    <rect x="430" y="120" width="320" height="64" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="446" y="140" font-size="12.5" fill="#1f2937">조직이 절차와 주기를 정하고</text>
+    <text x="446" y="160" font-size="12.5" fill="#1f2937">정기적으로 수행한 뒤</text>
+    <text x="446" y="178" font-size="12.5" font-weight="700" fill="#1f2937">그 결과를 조치</text>
+
+    <rect x="430" y="192" width="320" height="70" rx="4" fill="#ffffff" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="446" y="214" font-size="13" font-weight="700" fill="#b91c1c">여기서 생기는 함정</text>
+    <text x="446" y="236" font-size="12.5" fill="#1f2937">규정에 "연 2회"라 적고 연 1회만 실시</text>
+    <text x="446" y="254" font-size="12" fill="#b91c1c">→ 법정 주기가 아니어도 자기 규정 위반</text>
+
+    <!-- 공통 -->
+    <rect x="30" y="296" width="740" height="126" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="322" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2937">주기가 어디서 오든 심사에서 묻는 것은 같습니다</text>
+    <text x="400" y="348" text-anchor="middle" font-size="13.5" fill="#1f2937">계획 → 점검 → 조치 → 재점검, 이 고리가 닫혀 있는가</text>
+    <text x="70" y="382" font-size="12.5" fill="#1f2937">· 주기의 근거를 문서로 갖고 있는가</text>
+    <text x="430" y="382" font-size="12.5" fill="#1f2937">· 직전 점검일 기준으로 일정을 잡았는가</text>
+    <text x="70" y="406" font-size="12.5" fill="#1f2937">· 대상 범위를 어떻게 나눴는가</text>
+    <text x="430" y="406" font-size="12.5" fill="#1f2937">· 미조치 항목의 사유가 남아 있는가</text>
+  </g>
+</svg>

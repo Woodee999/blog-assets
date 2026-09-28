@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="컴퓨터 계정 암호가 단말과 도메인 컨트롤러 사이에서 어긋나는 네 가지 원인과 각각의 특징을 정리한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">어긋나는 것은 계정이 아니라 암호입니다</text>
+
+    <rect x="60" y="58" width="240" height="72" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="80" y="84" font-size="13.5" font-weight="700" fill="#1f2937">단말 (컴퓨터 계정)</text>
+    <text x="80" y="108" font-size="12" fill="#6b7280">기본값 30일마다 스스로 암호 변경</text>
+
+    <rect x="500" y="58" width="240" height="72" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="520" y="84" font-size="13.5" font-weight="700" fill="#1f2937">도메인 컨트롤러</text>
+    <text x="520" y="108" font-size="12" fill="#6b7280">AD에 저장된 컴퓨터 계정 암호</text>
+
+    <path d="M300 94 L496 94" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="398" y="86" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">값이 다름</text>
+    <path d="M380 100 L416 118" stroke="#b91c1c" stroke-width="2.5"/>
+    <path d="M416 100 L380 118" stroke="#b91c1c" stroke-width="2.5"/>
+
+    <text x="400" y="158" text-anchor="middle" font-size="13" fill="#1f2937">"이 워크스테이션과 주 도메인 간의 신뢰 관계가 실패했습니다"</text>
+
+    <!-- 4 causes -->
+    <rect x="28" y="180" width="368" height="106" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="206" font-size="13.5" font-weight="700" fill="#1f2937">① 스냅샷 · 백업 복원</text>
+    <text x="48" y="230" font-size="12.5" fill="#1f2937">암호 변경 이후 시점으로 되돌림</text>
+    <text x="48" y="254" font-size="12" fill="#6b7280">가상 머신에서 가장 흔함</text>
+    <text x="48" y="276" font-size="12" font-weight="700" fill="#1f2937">→ 보안 채널 복구로 해결</text>
+
+    <rect x="404" y="180" width="368" height="106" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="424" y="206" font-size="13.5" font-weight="700" fill="#b91c1c">② 계정 삭제 후 재생성</text>
+    <text x="424" y="230" font-size="12.5" fill="#1f2937">같은 이름으로 다시 만듦</text>
+    <text x="424" y="254" font-size="12" fill="#6b7280">SID가 달라짐 — 권한이 따라오지 않음</text>
+    <text x="424" y="276" font-size="12" font-weight="700" fill="#b91c1c">→ 재조인 필요</text>
+
+    <rect x="28" y="300" width="368" height="106" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="326" font-size="13.5" font-weight="700" fill="#1f2937">③ 같은 이름의 컴퓨터가 둘</text>
+    <text x="48" y="350" font-size="12.5" fill="#1f2937">복제본을 이름 변경 없이 조인</text>
+    <text x="48" y="374" font-size="12" fill="#6b7280">서로 암호를 덮어씀 — 번갈아 실패</text>
+    <text x="48" y="396" font-size="12" font-weight="700" fill="#1f2937">→ 이름을 먼저 정리</text>
+
+    <rect x="404" y="300" width="368" height="106" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="424" y="326" font-size="13.5" font-weight="700" fill="#1f2937">④ 암호 변경을 막은 정책</text>
+    <text x="424" y="350" font-size="12.5" fill="#1f2937">변경 비활성화 설정이 남아 있음</text>
+    <text x="424" y="374" font-size="12" fill="#6b7280">오래된 단말에서 발견</text>
+    <text x="424" y="396" font-size="12" font-weight="700" fill="#1f2937">→ 정책부터 되돌림</text>
+
+    <text x="400" y="432" text-anchor="middle" font-size="12" fill="#6b7280">스냅샷으로 되돌리는 운영을 한다면 이 오류는 반복해서 납니다 — 한 번 고치고 끝낼 문제가 아닙니다</text>
+  </g>
+</svg>

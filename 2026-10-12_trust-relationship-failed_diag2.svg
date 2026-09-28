@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="신뢰 관계 실패 오류를 확인하고 원인에 따라 보안 채널 복구 또는 재조인으로 나누는 절차 순서도">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">재조인 전에 갈라야 할 두 갈래</text>
+
+    <rect x="200" y="50" width="400" height="44" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="78" text-anchor="middle" font-size="13" fill="#1f2937">로컬 관리자로 로그온 — 도메인 로그온은 막혀 있습니다</text>
+
+    <path d="M400 94 L400 112" stroke="#1f2937" stroke-width="2" marker-end="url(#t1)"/>
+
+    <rect x="120" y="116" width="560" height="72" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="140" y="140" font-size="13" font-weight="700" fill="#1f2937">먼저 배제할 것 — 1분이면 끝납니다</text>
+    <text x="140" y="162" font-size="12.5" fill="#1f2937">nltest /dsgetdc: — DNS로 DC를 찾는가</text>
+    <text x="440" y="162" font-size="12.5" fill="#1f2937">w32tm /stripchart — 시간 차이</text>
+    <text x="140" y="180" font-size="11.5" fill="#6b7280">여기가 문제면 보안 채널을 고쳐도 같은 증상이 반복됩니다</text>
+
+    <path d="M400 188 L400 206" stroke="#1f2937" stroke-width="2" marker-end="url(#t1)"/>
+
+    <rect x="160" y="210" width="480" height="58" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="400" y="234" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Get-ADComputer 로 계정 상태 확인</text>
+    <text x="400" y="256" text-anchor="middle" font-size="12.5" fill="#1f2937">whenCreated 가 최근인가 · 이름이 비슷한 계정이 여럿인가</text>
+
+    <path d="M300 268 L220 292" stroke="#1f2937" stroke-width="2" marker-end="url(#t1)"/>
+    <path d="M500 268 L580 292" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#t2)"/>
+
+    <rect x="28" y="296" width="368" height="128" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="48" y="322" font-size="13.5" font-weight="700" fill="#1f2937">계정이 그대로 · SID 유지</text>
+    <text x="48" y="346" font-size="12.5" fill="#1f2937">Test-ComputerSecureChannel -Repair</text>
+    <text x="48" y="368" font-size="12.5" fill="#1f2937">Reset-ComputerMachinePassword</text>
+    <text x="48" y="390" font-size="12" fill="#6b7280">암호만 다시 맞춥니다 · 재부팅 없이 로그온</text>
+    <text x="48" y="412" font-size="12" font-weight="700" fill="#1f2937">정책 · 그룹 · 인증서 이력이 유지됨</text>
+
+    <rect x="404" y="296" width="368" height="128" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="424" y="322" font-size="13.5" font-weight="700" fill="#b91c1c">계정이 삭제 · 재생성됨</text>
+    <text x="424" y="346" font-size="12.5" fill="#1f2937">복구 명령으로는 끝나지 않습니다</text>
+    <text x="424" y="368" font-size="12.5" fill="#1f2937">재조인 — 다만 기존 계정을 지우지 말고 재사용</text>
+    <text x="424" y="390" font-size="12" fill="#6b7280">SID가 바뀌면 그 SID에 걸린 권한이 사라집니다</text>
+    <text x="424" y="412" font-size="12" font-weight="700" fill="#b91c1c">되살리는 작업이 재조인보다 오래 걸림</text>
+  </g>
+  <defs>
+    <marker id="t1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+    <marker id="t2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/></marker>
+  </defs>
+</svg>

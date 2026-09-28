@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="다섯 가지 질문별 확인 명령과 산출 파일을 하나의 점검 폴더로 모으는 구조를 나타낸 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">폴더 하나가 그 서버의 점검 증적입니다</text>
+
+    <rect x="28" y="52" width="744" height="40" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="400" y="78" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1f2937">C:\audit\&lt;컴퓨터이름&gt;_&lt;수집일&gt;</text>
+
+    <path d="M400 92 L400 110" stroke="#1f2937" stroke-width="2" marker-end="url(#m1)"/>
+
+    <rect x="28" y="114" width="744" height="52" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="136" font-size="13" font-weight="700" fill="#1f2937">① 누가</text>
+    <text x="140" y="136" font-size="12.5" fill="#1f2937">01_users.csv · 01_admins.csv · 01_secpol.cfg</text>
+    <text x="48" y="158" font-size="11.5" fill="#6b7280">쓰지 않는 계정이 켜져 있는가 · 관리자 그룹에 설명이 붙는가 · 정책 값이 기준과 같은가</text>
+
+    <rect x="28" y="174" width="744" height="52" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="196" font-size="13" font-weight="700" fill="#1f2937">② 어디서</text>
+    <text x="140" y="196" font-size="12.5" fill="#1f2937">02_fwprofile.csv · 인바운드 허용 규칙 목록</text>
+    <text x="48" y="218" font-size="11.5" fill="#6b7280">원격 주소가 Any 인 규칙 · 이름에 날짜나 사람 이름이 들어간 "임시" 규칙</text>
+
+    <rect x="28" y="234" width="744" height="52" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="256" font-size="13" font-weight="700" fill="#1f2937">③ 기록</text>
+    <text x="140" y="256" font-size="12.5" fill="#1f2937">03_auditpol.txt · 03_logsize.csv</text>
+    <text x="48" y="278" font-size="11.5" fill="#6b7280">LogMode 가 Circular 이면 가득 찰 때 오래된 기록부터 지워집니다 — 보존 기간과 크기를 맞춰 둡니다</text>
+
+    <rect x="28" y="294" width="744" height="52" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="316" font-size="13" font-weight="700" fill="#1f2937">④ 패치</text>
+    <text x="140" y="316" font-size="12.5" fill="#1f2937">04_hotfix.csv · 빌드와 UBR</text>
+    <text x="48" y="338" font-size="11.5" fill="#6b7280">"최신인가"보다 "주기대로 적용했는가" — 늦춘 이유 · 보완 방법 · 적용 예정일 세 가지</text>
+
+    <rect x="28" y="354" width="744" height="52" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="376" font-size="13" font-weight="700" fill="#1f2937">⑤ 불필요</text>
+    <text x="140" y="376" font-size="12.5" fill="#1f2937">05_services.csv · 공유 목록</text>
+    <text x="48" y="398" font-size="11.5" fill="#6b7280">서버 역할별로 켜져 있어야 할 서비스 목록을 한 번 만들어 두면 이후에는 차이만 봅니다</text>
+
+    <rect x="28" y="414" width="744" height="24" rx="4" fill="#ffffff" stroke="#b91c1c" stroke-width="2"/>
+    <text x="400" y="431" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b91c1c">수집 파일 자체가 내부 정보입니다 — 폴더 접근 권한을 제한하고 보관 기간을 정해 둡니다</text>
+  </g>
+  <defs>
+    <marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+  </defs>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="유효성 검사 결과의 성공 경고 실패 세 단계와 지원 조건의 관계, 경고를 만났을 때의 판단 경로를 표시한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">경고는 어디에 놓여 있는가</text>
+
+    <rect x="28" y="58" width="240" height="126" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="84" font-size="15" font-weight="700" fill="#1f2937">성공</text>
+    <text x="48" y="110" font-size="12.5" fill="#1f2937">권장 구성에 맞음</text>
+    <text x="48" y="140" font-size="12.5" font-weight="700" fill="#1f2937">지원 대상</text>
+    <text x="48" y="164" font-size="12" fill="#6b7280">할 일 없음</text>
+
+    <rect x="280" y="58" width="240" height="126" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="3"/>
+    <text x="300" y="84" font-size="15" font-weight="700" fill="#1f2937">경고</text>
+    <text x="300" y="110" font-size="12.5" fill="#1f2937">동작은 하나 권장 기준 미달</text>
+    <text x="300" y="140" font-size="12.5" font-weight="700" fill="#1f2937">지원 대상 — 다만 검토 대상</text>
+    <text x="300" y="164" font-size="12" fill="#6b7280">원인 확인 후 조치 또는 사유 기록</text>
+
+    <rect x="532" y="58" width="240" height="126" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="552" y="84" font-size="15" font-weight="700" fill="#b91c1c">실패</text>
+    <text x="552" y="110" font-size="12.5" fill="#1f2937">구성 요건 미충족</text>
+    <text x="552" y="140" font-size="12.5" font-weight="700" fill="#b91c1c">지원 대상에서 빠짐</text>
+    <text x="552" y="164" font-size="12" fill="#b91c1c">반드시 조치</text>
+
+    <!-- 지원 조건 -->
+    <rect x="28" y="204" width="744" height="84" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="230" font-size="14" font-weight="700" fill="#1f2937">지원 조건은 두 가지입니다</text>
+    <text x="48" y="256" font-size="12.5" fill="#1f2937">① 전체 구성이 유효성 검사를 통과할 것</text>
+    <text x="48" y="278" font-size="12.5" fill="#1f2937">② 노드의 Windows Server 버전에 맞는 인증 하드웨어만 쓸 것 <tspan fill="#6b7280">— 검사 보고서에는 드러나지 않습니다</tspan></text>
+
+    <path d="M400 288 L400 312" stroke="#1f2937" stroke-width="2" marker-end="url(#c1)" fill="none"/>
+
+    <!-- 판단 경로 -->
+    <rect x="28" y="316" width="744" height="106" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="342" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">경고를 만났을 때 — "무시"와 "즉시 수정" 둘 중 하나가 아닙니다</text>
+    <text x="70" y="372" font-size="12.5" fill="#1f2937">원인 확인</text>
+    <text x="300" y="372" font-size="12.5" fill="#1f2937">고칠 것인가</text>
+    <text x="530" y="372" font-size="12.5" fill="#1f2937">사유를 남기고 둘 것인가</text>
+    <text x="70" y="400" font-size="12" fill="#6b7280">어느 범주인지부터</text>
+    <text x="300" y="400" font-size="12" fill="#6b7280">구성 변경 창이 필요한가</text>
+    <text x="530" y="400" font-size="12" fill="#6b7280">장애 조사 때 설명할 근거가 됨</text>
+  </g>
+  <defs>
+    <marker id="c1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+  </defs>
+</svg>

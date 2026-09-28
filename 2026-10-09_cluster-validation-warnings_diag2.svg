@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="운영 중 클러스터에서 유효성 검사를 범주별로 나눠 실행하고 스토리지 검사는 작업 창에 배치하는 절차 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">운영 중 클러스터는 순서를 나눕니다</text>
+
+    <rect x="28" y="58" width="744" height="96" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="84" font-size="14" font-weight="700" fill="#1f2937">1단계 — 서비스 영향 없이 돌리는 범위</text>
+    <text x="48" y="110" font-size="12.5" fill="#1f2937">Test-Cluster -Node 'NODE01','NODE02' -Ignore Storage -ReportName 'C:\report\validate_pre'</text>
+    <text x="48" y="136" font-size="12" fill="#6b7280">Inventory · Network · System Configuration · Cluster Configuration — 노드 간 차이가 여기서 드러납니다</text>
+
+    <path d="M400 154 L400 176" stroke="#1f2937" stroke-width="2" marker-end="url(#d1)"/>
+
+    <rect x="28" y="180" width="744" height="76" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="206" font-size="14" font-weight="700" fill="#1f2937">2단계 — 경고 정리와 조치</text>
+    <text x="48" y="232" font-size="12.5" fill="#1f2937">고칠 것 / 사유를 남기고 둘 것으로 나눕니다. 구성 변경이 필요하면 계획된 재시작에 묶습니다.</text>
+
+    <path d="M400 256 L400 278" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#d2)"/>
+
+    <rect x="28" y="282" width="744" height="96" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="48" y="308" font-size="14" font-weight="700" fill="#b91c1c">3단계 — 작업 창에서 Storage 포함 전체</text>
+    <text x="48" y="334" font-size="12.5" fill="#1f2937">역할이 쓰고 있는 디스크는 그대로 검사되지 않습니다.</text>
+    <text x="48" y="356" font-size="12.5" fill="#1f2937">PowerShell은 빼고 돌고, 마법사는 역할을 오프라인으로 내릴지 물어봅니다 — 검사가 끝날 때까지 내려가 있습니다.</text>
+
+    <path d="M400 378 L400 396" stroke="#1f2937" stroke-width="2" marker-end="url(#d1)"/>
+
+    <rect x="28" y="400" width="744" height="34" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="423" font-size="12.5" fill="#1f2937">4단계 — 보고서를 날짜별로 보관. 구성 변경 전후로 한 벌씩 남기면 장애 조사에서 비교 기준이 됩니다.</text>
+  </g>
+  <defs>
+    <marker id="d1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+    <marker id="d2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/></marker>
+  </defs>
+</svg>

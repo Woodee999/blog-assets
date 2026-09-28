@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="점검 계획부터 재점검까지 네 단계의 증적이 서로 연결되는 구조와 각 단계에서 자주 빠지는 항목을 표시한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">증적 네 개가 서로를 가리켜야 끝납니다</text>
+
+    <!-- 4 boxes -->
+    <rect x="28" y="62" width="166" height="118" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="44" y="86" font-size="14" font-weight="700" fill="#1f2937">① 계획</text>
+    <text x="44" y="108" font-size="12" fill="#1f2937">점검 계획서</text>
+    <text x="44" y="130" font-size="11.5" fill="#6b7280">대상 범위 · 주기 근거</text>
+    <text x="44" y="150" font-size="11.5" fill="#6b7280">담당 · 일정</text>
+
+    <rect x="216" y="62" width="166" height="118" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="232" y="86" font-size="14" font-weight="700" fill="#1f2937">② 점검</text>
+    <text x="232" y="108" font-size="12" fill="#1f2937">점검 결과서</text>
+    <text x="232" y="130" font-size="11.5" fill="#6b7280">항목별 판정</text>
+    <text x="232" y="150" font-size="11.5" fill="#6b7280">판정 근거(설정값)</text>
+
+    <rect x="404" y="62" width="166" height="118" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="420" y="86" font-size="14" font-weight="700" fill="#1f2937">③ 조치</text>
+    <text x="420" y="108" font-size="12" fill="#1f2937">조치 계획 · 결과</text>
+    <text x="420" y="130" font-size="11.5" fill="#6b7280">내용 · 담당 · 완료일</text>
+    <text x="420" y="150" font-size="11.5" fill="#6b7280">미조치 사유 · 보완통제</text>
+
+    <rect x="592" y="62" width="180" height="118" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="608" y="86" font-size="14" font-weight="700" fill="#b91c1c">④ 확인</text>
+    <text x="608" y="108" font-size="12" fill="#1f2937">재점검 결과</text>
+    <text x="608" y="130" font-size="11.5" fill="#6b7280">조치 후 다시 측정한 값</text>
+    <text x="608" y="152" font-size="11.5" font-weight="700" fill="#b91c1c">가장 많이 빠지는 자리</text>
+
+    <path d="M194 121 L212 121" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+    <path d="M382 121 L400 121" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+    <path d="M570 121 L588 121" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#a2)"/>
+
+    <!-- 항목 번호 연결 -->
+    <rect x="28" y="206" width="744" height="88" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="232" font-size="14" font-weight="700" fill="#1f2937">같은 항목 번호가 네 문서를 관통해야 합니다</text>
+    <text x="48" y="258" font-size="12.5" fill="#1f2937">점검 결과서 <tspan font-weight="700">OS-07</tspan>  →  조치 계획 <tspan font-weight="700">OS-07</tspan>  →  재점검 결과 <tspan font-weight="700">OS-07</tspan></text>
+    <text x="48" y="280" font-size="12" fill="#6b7280">문서마다 번호 체계가 다르면 같은 내용을 설명하는 데 시간이 훨씬 더 걸립니다</text>
+
+    <!-- 고리가 끊기는 자리 -->
+    <rect x="28" y="312" width="744" height="110" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="48" y="338" font-size="14" font-weight="700" fill="#b91c1c">고리가 끊기는 세 가지 모습</text>
+    <text x="48" y="364" font-size="12.5" fill="#1f2937">· 점검 보고서만 있고 조치 이력이 없다</text>
+    <text x="48" y="388" font-size="12.5" fill="#1f2937">· 조치 완료일만 채워져 있고 다시 측정한 값이 없다 — "했다고 적힌 것"이지 "됐다는 증거"가 아님</text>
+    <text x="48" y="410" font-size="12.5" fill="#1f2937">· 못 고친 항목을 목록에서 지웠다 — 다음 점검에 다시 나타나고 그때는 설명이 더 어려움</text>
+  </g>
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/></marker>
+  </defs>
+</svg>
