@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="등록 에이전트가 다른 사용자 이름의 인증서 요청에 서명해 CA가 발급하는 흐름과 그 과정에서 확인되는 요소를 나타낸 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">서명자와 주체가 다릅니다</text>
+
+    <rect x="28" y="52" width="216" height="92" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="46" y="76" font-size="13" font-weight="700" fill="#1f2937">등록 에이전트</text>
+    <text x="46" y="98" font-size="11.5" fill="#1f2937">Certificate Request Agent EKU</text>
+    <text x="46" y="116" font-size="11.5" font-family="monospace" fill="#b91c1c">1.3.6.1.4.1.311.20.2.1</text>
+    <text x="46" y="136" font-size="11.5" fill="#6b7280">요청을 만들고 서명합니다</text>
+
+    <path d="M244 98 L286 98" stroke="#1f2937" stroke-width="2" marker-end="url(#e1)"/>
+
+    <rect x="292" y="52" width="216" height="92" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="310" y="76" font-size="13" font-weight="700" fill="#b91c1c">요청 (서명 2개)</text>
+    <text x="310" y="98" font-size="11.5" fill="#1f2937">주체 = 최종 사용자</text>
+    <text x="310" y="118" font-size="11.5" fill="#1f2937">서명자 = 에이전트</text>
+    <text x="310" y="136" font-size="11.5" fill="#b91c1c">두 값이 다를 수 있다는 것이 핵심</text>
+
+    <path d="M508 98 L550 98" stroke="#1f2937" stroke-width="2" marker-end="url(#e1)"/>
+
+    <rect x="556" y="52" width="216" height="92" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="574" y="76" font-size="13" font-weight="700" fill="#1f2937">CA</text>
+    <text x="574" y="98" font-size="11.5" fill="#1f2937">서명자 인증서에 필요한</text>
+    <text x="574" y="116" font-size="11.5" fill="#1f2937">EKU가 있는지 확인</text>
+    <text x="574" y="136" font-size="11.5" fill="#6b7280">통과하면 발급</text>
+
+    <path d="M664 144 L664 170" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#e2)"/>
+    <rect x="556" y="174" width="216" height="52" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="574" y="198" font-size="12.5" font-weight="700" fill="#b91c1c">최종 사용자 이름의 인증서</text>
+    <text x="574" y="218" font-size="11.5" fill="#1f2937">그 사용자로 인증됩니다</text>
+
+    <!-- what to check -->
+    <rect x="28" y="248" width="744" height="126" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="274" font-size="14" font-weight="700" fill="#1f2937">템플릿에서 볼 네 가지</text>
+    <text x="48" y="300" font-size="12.5" fill="#1f2937">① 누가 등록할 수 있는가</text>
+    <text x="330" y="300" font-size="12" fill="#6b7280">Enroll / Autoenroll 권한 — 넓은 그룹이면 그 자체가 결과</text>
+    <text x="48" y="322" font-size="12.5" fill="#1f2937">② 승인이 필요한가</text>
+    <text x="330" y="322" font-size="12" fill="#6b7280">CA 인증서 관리자 승인 → 보류 상태로 들어감</text>
+    <text x="48" y="344" font-size="12.5" fill="#1f2937">③ 서명이 몇 개 필요한가</text>
+    <text x="330" y="344" font-size="12" fill="#b91c1c">msPKI-RA-Signature = 0 이면 공동 서명 불필요</text>
+    <text x="48" y="366" font-size="12.5" fill="#1f2937">④ 어떤 서명을 요구하는가</text>
+    <text x="330" y="366" font-size="12" fill="#6b7280">msPKI-RA-Application-Policies 에 요구 OID</text>
+
+    <rect x="28" y="386" width="744" height="42" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="404" font-size="11.5" fill="#6b7280">기본 제공 템플릿 — Enrollment Agent / Enrollment Agent (Computer) / Exchange Enrollment Agent (Offline request)</text>
+    <text x="48" y="422" font-size="11.5" fill="#1f2937">세 번째는 <tspan font-weight="700">요청자가 주체 이름을 직접 써 넣습니다</tspan> — 설명 자체가 점검 포인트입니다</text>
+  </g>
+  <defs>
+    <marker id="e1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+    <marker id="e2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/></marker>
+  </defs>
+</svg>

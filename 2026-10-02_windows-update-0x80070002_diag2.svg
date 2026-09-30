@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="0x80070002 진단을 위해 확인할 로그 위치와 각 로그에서 얻을 수 있는 정보를 정리한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">추측을 멈추고 로그로 갑니다</text>
+
+    <rect x="28" y="58" width="744" height="84" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="48" y="84" font-size="14" font-weight="700" fill="#b91c1c">옛 방식은 더 이상 통하지 않습니다</text>
+    <text x="48" y="108" font-size="12.5" fill="#1f2937">C:\Windows\WindowsUpdate.log 를 메모장으로 여는 방법</text>
+    <text x="48" y="130" font-size="12" fill="#6b7280">"Windows Update no longer directly produces a WindowsUpdate.log file. Instead, it produces .etl files…"</text>
+
+    <path d="M400 142 L400 164" stroke="#1f2937" stroke-width="2" marker-end="url(#w1)"/>
+
+    <rect x="28" y="168" width="744" height="66" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="48" y="192" font-size="13.5" font-weight="700" fill="#1f2937">Get-WindowsUpdateLog</text>
+    <text x="48" y="214" font-size="12.5" fill="#1f2937">.etl 파일들을 합쳐 읽을 수 있는 WindowsUpdate.log 로 만듭니다 (기본: 바탕 화면)</text>
+    <text x="48" y="230" font-size="11.5" fill="#6b7280">그 시점의 정지 사본입니다 — 다시 보려면 다시 실행해야 합니다</text>
+
+    <rect x="28" y="246" width="364" height="84" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="46" y="270" font-size="13" font-weight="700" fill="#1f2937">CBS.log</text>
+    <text x="46" y="292" font-size="12" fill="#1f2937">%SystemRoot%\Logs\CBS</text>
+    <text x="46" y="314" font-size="11.5" fill="#6b7280">서비싱 스택이 실제로 실패한 지점 · 누락된 파일 이름</text>
+
+    <rect x="408" y="246" width="364" height="84" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="426" y="270" font-size="13" font-weight="700" fill="#1f2937">WindowsUpdateClient / Operational</text>
+    <text x="426" y="292" font-size="12" fill="#1f2937">응용 프로그램 및 서비스 로그 &gt; Microsoft &gt; Windows</text>
+    <text x="426" y="314" font-size="11.5" fill="#6b7280">실패한 업데이트와 오류 코드</text>
+
+    <rect x="28" y="342" width="744" height="84" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="366" font-size="13" font-weight="700" fill="#1f2937">문서로 확인되는 이벤트 두 개</text>
+    <text x="48" y="390" font-size="12.5" fill="#b91c1c">ID 20</text>
+    <text x="130" y="390" font-size="12.5" fill="#1f2937">Installation failure: Windows failed to install the following update with error…</text>
+    <text x="48" y="412" font-size="12.5" fill="#1f2937">ID 19</text>
+    <text x="130" y="412" font-size="12.5" fill="#6b7280">Installation successful — 둘을 시간순으로 놓으면 어느 KB부터 막혔는지 보입니다</text>
+  </g>
+  <defs>
+    <marker id="w1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+  </defs>
+</svg>

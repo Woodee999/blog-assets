@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="ISMS-P 2.9 운영관리 일곱 항목의 위치와 변경관리가 다른 항목들과 연결되는 지점을 나타낸 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">2.9 시스템 및 서비스 운영관리 — 일곱 항목</text>
+
+    <rect x="28" y="50" width="744" height="54" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="48" y="74" font-size="14.5" font-weight="700" fill="#b91c1c">2.9.1 변경관리</text>
+    <text x="48" y="96" font-size="12.5" fill="#1f2937">모든 변경내역을 관리할 절차 + <tspan font-weight="700">변경 전 성능·보안 영향 분석</tspan> — 뒤쪽 절반이 자주 빠집니다</text>
+
+    <rect x="28" y="116" width="364" height="62" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="140" font-size="13" font-weight="700" fill="#1f2937">2.9.2 성능 및 장애관리</text>
+    <text x="46" y="164" font-size="11.5" fill="#6b7280">변경으로 생긴 장애는 이쪽으로 이어집니다</text>
+
+    <rect x="408" y="116" width="364" height="62" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="426" y="140" font-size="13" font-weight="700" fill="#1f2937">2.9.3 백업 및 복구관리</text>
+    <text x="426" y="164" font-size="11.5" fill="#6b7280">변경 전 백업 · 되돌릴 방법이 여기와 연결</text>
+
+    <rect x="28" y="190" width="364" height="76" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="46" y="214" font-size="13" font-weight="700" fill="#1f2937">2.9.4 로그 및 접속기록 관리</text>
+    <text x="46" y="236" font-size="12" fill="#1f2937">보존 — 유형 · 기간 · 방법</text>
+    <text x="46" y="256" font-size="11.5" fill="#6b7280">위·변조, 도난, 분실되지 않게</text>
+
+    <rect x="408" y="190" width="364" height="76" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="426" y="214" font-size="13" font-weight="700" fill="#1f2937">2.9.5 로그 및 접속기록 점검</text>
+    <text x="426" y="236" font-size="12" fill="#1f2937">검토 — 기준 수립 후 주기적 점검</text>
+    <text x="426" y="256" font-size="11.5" fill="#6b7280">문제 발생 시 사후조치</text>
+
+    <text x="400" y="288" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">2.9.4와 2.9.5를 한 덩어리로 묶어 관리하다 지적받는 경우가 많습니다 — 하나는 보관, 하나는 검토</text>
+
+    <rect x="28" y="302" width="364" height="60" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="326" font-size="13" font-weight="700" fill="#1f2937">2.9.6 시간 동기화</text>
+    <text x="46" y="348" font-size="11.5" fill="#6b7280">로그 신뢰성의 전제 — 여기가 틀리면 앞이 다 흔들립니다</text>
+
+    <rect x="408" y="302" width="364" height="60" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="426" y="326" font-size="13" font-weight="700" fill="#1f2937">2.9.7 정보자산의 재사용 및 폐기</text>
+    <text x="426" y="348" font-size="11.5" fill="#6b7280">장비 반납 · 폐기 시 정보 제거</text>
+
+    <rect x="28" y="376" width="744" height="50" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="400" y="400" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">변경관리는 홀로 서지 않습니다</text>
+    <text x="400" y="420" text-anchor="middle" font-size="12" fill="#6b7280">영향 분석 → 2.9.2 · 복구 방안 → 2.9.3 · 변경 흔적 → 2.9.4/2.9.5 로 이어집니다</text>
+  </g>
+</svg>

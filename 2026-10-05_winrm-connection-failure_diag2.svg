@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="원격 세션에서 세 번째 서버 자원에 접근할 때 자격 증명이 전달되지 않는 두 번째 홉 구조를 나타낸 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">붙었는데 그다음이 안 될 때</text>
+
+    <rect x="28" y="62" width="216" height="80" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="46" y="88" font-size="13" font-weight="700" fill="#1f2937">ServerA — 내 단말</text>
+    <text x="46" y="112" font-size="12" fill="#1f2937">Enter-PSSession</text>
+    <text x="46" y="132" font-size="11.5" fill="#6b7280">자격 증명으로 세션을 엽니다</text>
+
+    <path d="M244 102 L286 102" stroke="#1f2937" stroke-width="2" marker-end="url(#s1)"/>
+    <text x="265" y="94" text-anchor="middle" font-size="11" fill="#1f2937">OK</text>
+
+    <rect x="292" y="62" width="216" height="80" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="310" y="88" font-size="13" font-weight="700" fill="#1f2937">ServerB — 원격 세션</text>
+    <text x="310" y="112" font-size="12" fill="#1f2937">명령은 정상 실행됩니다</text>
+    <text x="310" y="132" font-size="11.5" fill="#6b7280">여기까지는 문제가 없습니다</text>
+
+    <path d="M508 102 L550 102" stroke="#b91c1c" stroke-width="2.5"/>
+    <path d="M516 90 L542 114" stroke="#b91c1c" stroke-width="2.5"/>
+    <path d="M542 90 L516 114" stroke="#b91c1c" stroke-width="2.5"/>
+
+    <rect x="556" y="62" width="216" height="80" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="574" y="88" font-size="13" font-weight="700" fill="#b91c1c">ServerC — 파일 공유 등</text>
+    <text x="574" y="112" font-size="12" fill="#1f2937">액세스 거부</text>
+    <text x="574" y="132" font-size="11.5" fill="#6b7280">B에서 C로 자격 증명이 안 갑니다</text>
+
+    <rect x="28" y="162" width="744" height="52" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="186" font-size="12.5" font-weight="700" fill="#1f2937">이 증상은 연결 문제가 아닙니다</text>
+    <text x="48" y="206" font-size="12" fill="#6b7280">세션은 열려 있고 명령도 돕니다. 세션 안에서 세 번째 자원에 갈 때만 막힙니다.</text>
+
+    <rect x="28" y="230" width="744" height="110" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="48" y="256" font-size="14" font-weight="700" fill="#b91c1c">CredSSP 를 먼저 켜지 않습니다</text>
+    <text x="48" y="282" font-size="12.5" fill="#1f2937">"CredSSP caches credentials on the remote server (ServerB),</text>
+    <text x="48" y="302" font-size="12.5" fill="#1f2937">so using it opens you up to credential theft attacks."</text>
+    <text x="48" y="324" font-size="12" fill="#6b7280">기본값은 클라이언트·서버 모두 사용 안 함 · 문서는 가장 신뢰할 수 있는 환경에서만 켜라고 적습니다</text>
+
+    <rect x="28" y="356" width="744" height="70" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="380" font-size="13" font-weight="700" fill="#1f2937">먼저 볼 것</text>
+    <text x="48" y="402" font-size="12" fill="#1f2937">그 작업을 대상 서버에서 직접 수행하도록 바꿀 수 있는가</text>
+    <text x="48" y="420" font-size="12" fill="#6b7280">세션 안에서 다른 서버를 부르는 구조 자체를 줄이는 편이 안전합니다</text>
+  </g>
+  <defs>
+    <marker id="s1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+  </defs>
+</svg>

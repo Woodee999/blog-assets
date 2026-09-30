@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="위임 감사를 세 유형별로 나눠 실행하고 결과를 보호 계정 지정과 Protected Users 적용으로 이어가는 절차 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">읽고 → 세고 → 계정 쪽에 걸기</text>
+
+    <rect x="28" y="50" width="744" height="26" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="400" y="68" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6b7280">1단계 — 읽기 전용 감사</text>
+
+    <rect x="28" y="84" width="240" height="96" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="46" y="108" font-size="13" font-weight="700" fill="#1f2937">무제한</text>
+    <text x="46" y="130" font-size="11.5" fill="#1f2937">Get-ADComputer -Filter</text>
+    <text x="46" y="148" font-size="11.5" fill="#1f2937">'TrustedForDelegation -eq $true'</text>
+    <text x="46" y="170" font-size="11.5" fill="#6b7280">사용자 계정도 같이 봅니다</text>
+
+    <rect x="280" y="84" width="240" height="96" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="298" y="108" font-size="13" font-weight="700" fill="#1f2937">제한된</text>
+    <text x="298" y="130" font-size="11.5" fill="#1f2937">-Properties</text>
+    <text x="298" y="148" font-size="11.5" fill="#1f2937">msDS-AllowedToDelegateTo</text>
+    <text x="298" y="170" font-size="11.5" fill="#6b7280">TrustedToAuthForDelegation 도</text>
+
+    <rect x="532" y="84" width="240" height="96" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="550" y="108" font-size="13" font-weight="700" fill="#1f2937">리소스 기반</text>
+    <text x="550" y="130" font-size="11.5" fill="#1f2937">-Properties Principals</text>
+    <text x="550" y="148" font-size="11.5" fill="#1f2937">AllowedToDelegateToAccount</text>
+    <text x="550" y="170" font-size="11.5" fill="#b91c1c">파라미터가 아니라 속성입니다</text>
+
+    <path d="M400 180 L400 202" stroke="#1f2937" stroke-width="2" marker-end="url(#k1)"/>
+
+    <rect x="28" y="206" width="744" height="58" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="48" y="230" font-size="13" font-weight="700" fill="#1f2937">2단계 — 목록에 이유를 붙입니다</text>
+    <text x="48" y="252" font-size="12" fill="#6b7280">계정 이름만 적으면 다음 점검에서 "아직 필요한가"를 물을 수 없습니다 · 요청자와 용도를 함께</text>
+
+    <path d="M400 264 L400 286" stroke="#1f2937" stroke-width="2" marker-end="url(#k1)"/>
+
+    <rect x="28" y="290" width="368" height="112" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="48" y="314" font-size="13.5" font-weight="700" fill="#1f2937">① 민감 계정으로 표시</text>
+    <text x="48" y="336" font-size="12" fill="#1f2937">Account is sensitive and cannot be delegated</text>
+    <text x="48" y="356" font-size="12" fill="#1f2937">= NOT_DELEGATED (0x100000)</text>
+    <text x="48" y="378" font-size="11.5" fill="#6b7280">계정 단위로 범위를 세밀하게 잡을 수 있습니다</text>
+    <text x="48" y="396" font-size="11.5" fill="#1f2937">Set-ADAccountControl -AccountNotDelegated:$true</text>
+
+    <rect x="404" y="290" width="368" height="112" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="424" y="314" font-size="13.5" font-weight="700" fill="#b91c1c">② Protected Users 그룹</text>
+    <text x="424" y="336" font-size="12" fill="#1f2937">무제한·제한된 위임 모두 차단됩니다</text>
+    <text x="424" y="358" font-size="11.5" fill="#b91c1c">부작용 — TGT 4시간 제한, 갱신 불가</text>
+    <text x="424" y="378" font-size="11.5" fill="#6b7280">업무 영향이 있으니 관리자 계정부터 단계적으로</text>
+    <text x="424" y="396" font-size="11.5" fill="#6b7280">위임이 안 될 때는 그룹 구성원 자격도 확인</text>
+
+    <text x="400" y="428" text-anchor="middle" font-size="12" fill="#6b7280">탐지는 이벤트 4769 — 제한된 위임이 쓰이면 Transited Services 필드에 SPN 목록이 남습니다</text>
+  </g>
+  <defs>
+    <marker id="k1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+  </defs>
+</svg>

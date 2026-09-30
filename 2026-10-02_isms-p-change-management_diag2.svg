@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="변경 요청부터 문서 갱신까지 다섯 단계와 각 단계에서 Windows가 남기는 이벤트 및 산출 파일을 연결한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">다섯 단계, 그리고 시스템이 남기는 것</text>
+
+    <text x="200" y="60" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6b7280">절차가 남기는 것 (사람)</text>
+    <text x="580" y="60" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6b7280">시스템이 남기는 것 (기계)</text>
+
+    <rect x="28" y="72" width="344" height="50" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="94" font-size="12.5" font-weight="700" fill="#1f2937">① 변경요청</text>
+    <text x="46" y="114" font-size="11.5" fill="#6b7280">변경 신청서 — 누가 왜</text>
+    <rect x="428" y="72" width="344" height="50" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="446" y="94" font-size="11.5" fill="#6b7280">—</text>
+    <text x="446" y="114" font-size="11.5" fill="#6b7280">이 단계는 시스템에 흔적이 없습니다</text>
+
+    <rect x="28" y="130" width="344" height="50" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="152" font-size="12.5" font-weight="700" fill="#1f2937">② 책임자 검토 및 승인</text>
+    <text x="46" y="172" font-size="11.5" fill="#6b7280">승인 기록 — 없으면 무단 변경</text>
+    <rect x="428" y="130" width="344" height="50" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="446" y="152" font-size="11.5" fill="#6b7280">—</text>
+    <text x="446" y="172" font-size="11.5" fill="#6b7280">승인은 문서로만 증명됩니다</text>
+
+    <rect x="28" y="188" width="344" height="58" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="46" y="210" font-size="12.5" font-weight="700" fill="#b91c1c">③ 영향 분석 (2.9.1 본문 요건)</text>
+    <text x="46" y="230" font-size="11.5" fill="#1f2937">성능 · 보안 · 복구 세 줄</text>
+    <text x="46" y="242" font-size="11" fill="#6b7280">"영향 없음" 한 줄로는 통하지 않습니다</text>
+    <rect x="428" y="188" width="344" height="58" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="446" y="210" font-size="11.5" fill="#1f2937">변경 전 수집값 (설정 스냅숏)</text>
+    <text x="446" y="232" font-size="11.5" fill="#6b7280">조치 전후 비교의 기준선</text>
+
+    <rect x="28" y="254" width="344" height="58" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="276" font-size="12.5" font-weight="700" fill="#1f2937">④ 변경 확인 및 검증</text>
+    <text x="46" y="296" font-size="11.5" fill="#6b7280">적용 후 의도대로 됐는지 다시 측정</text>
+    <rect x="428" y="254" width="344" height="58" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="446" y="276" font-size="11.5" fill="#1f2937">Get-HotFix · gpresult /h</text>
+    <text x="446" y="296" font-size="11.5" fill="#1f2937">GroupPolicy/Operational 4016·5016·7016</text>
+
+    <rect x="28" y="320" width="344" height="58" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="342" font-size="12.5" font-weight="700" fill="#1f2937">⑤ 문서 식별 및 갱신 · 이력관리</text>
+    <text x="46" y="362" font-size="11.5" fill="#6b7280">구성도·절차서가 옛 상태로 남기 쉽습니다</text>
+    <rect x="428" y="320" width="344" height="58" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="446" y="342" font-size="11.5" fill="#1f2937">보안 로그 4720 · 4728/4732/4756</text>
+    <text x="446" y="362" font-size="11.5" fill="#1f2937">4719 · 4739 · 4697 / GPO 수정은 5136</text>
+
+    <rect x="28" y="388" width="744" height="40" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="2"/>
+    <text x="400" y="413" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">4719는 감사 정책 하위 범주 설정과 무관하게 항상 기록됩니다 — 감사를 끄는 변경 자체가 남습니다</text>
+  </g>
+</svg>

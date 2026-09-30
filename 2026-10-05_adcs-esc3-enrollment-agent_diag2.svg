@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="등록 에이전트 관련 템플릿을 찾아 권한과 서명 요구 사항을 확인하고 CA 제한 기능 적용으로 이어지는 점검 절차 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">찾고 → 제한하고 → 기록합니다</text>
+
+    <rect x="28" y="50" width="744" height="72" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="74" font-size="13.5" font-weight="700" fill="#1f2937">1단계 — 해당 EKU를 가진 템플릿 찾기 (읽기 전용)</text>
+    <text x="48" y="96" font-size="12" fill="#1f2937">certutil -v -template &gt; templates.txt · certutil -CAInfo templates</text>
+    <text x="48" y="114" font-size="11.5" fill="#6b7280">Get-CATemplate 은 이름과 OID만 반환합니다 — EKU·권한·서명 요구 수는 나오지 않습니다</text>
+
+    <path d="M400 122 L400 144" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+
+    <rect x="28" y="148" width="744" height="72" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="172" font-size="13.5" font-weight="700" fill="#1f2937">2단계 — 두 부류로 나눠 봅니다</text>
+    <text x="48" y="194" font-size="12" fill="#1f2937">에이전트 인증서를 <tspan font-weight="700">발급하는</tspan> 템플릿 — 누가 Enroll 할 수 있는가</text>
+    <text x="48" y="212" font-size="12" fill="#1f2937">에이전트 서명으로 <tspan font-weight="700">발급되는</tspan> 템플릿 — 서명 요구 수와 요구 정책이 걸려 있는가</text>
+
+    <path d="M400 220 L400 242" stroke="#b91c1c" stroke-width="2.5" marker-end="url(#a2)"/>
+
+    <rect x="28" y="246" width="744" height="98" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="48" y="270" font-size="13.5" font-weight="700" fill="#b91c1c">3단계 — 제한된 등록 에이전트 (CA 속성 &gt; Enrollment Agents 탭)</text>
+    <text x="48" y="294" font-size="12.5" fill="#1f2937">누가</text>
+    <text x="150" y="294" font-size="12" fill="#6b7280">Permissions — 에이전트로 지정할 사용자·그룹</text>
+    <text x="48" y="314" font-size="12.5" fill="#1f2937">어떤 템플릿으로</text>
+    <text x="150" y="314" font-size="12" fill="#6b7280">Certificate Templates — 대상 템플릿</text>
+    <text x="48" y="334" font-size="12.5" fill="#1f2937">누구를 대신해</text>
+    <text x="150" y="334" font-size="12" fill="#6b7280">Allow / Deny — 도메인 관리자 그룹을 Deny 에 넣어 두면 효과가 큽니다</text>
+
+    <path d="M400 344 L400 366" stroke="#1f2937" stroke-width="2" marker-end="url(#a1)"/>
+
+    <rect x="28" y="370" width="744" height="58" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="394" font-size="13" font-weight="700" fill="#1f2937">4단계 — 기록 남기기 (두 설정을 함께)</text>
+    <text x="48" y="416" font-size="12" fill="#1f2937">certutil -setreg CA\AuditFilter 4 + 감사 정책의 Audit Certification Services → 4886 · 4887 · 4888</text>
+  </g>
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/></marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b91c1c"/></marker>
+  </defs>
+</svg>

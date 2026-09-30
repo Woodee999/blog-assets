@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="0x80070002 조치 순서를 재시작부터 구성 요소 리셋까지 단계별로 배치하고 폴더 이름 변경을 최후 수단으로 표시한 도식">
+  <rect x="0" y="0" width="800" height="450" fill="#ffffff"/>
+  <g font-family="system-ui, -apple-system, 'Malgun Gothic', sans-serif">
+
+    <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">문서 순서 vs 인터넷 순서</text>
+
+    <text x="220" y="58" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6b7280">문서에 적힌 순서</text>
+    <text x="600" y="58" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">흔히 보는 순서</text>
+
+    <rect x="28" y="70" width="384" height="30" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="44" y="90" font-size="12.5" fill="#1f2937">① 재시작 — 보류 중인 재부팅 해소</text>
+
+    <rect x="28" y="106" width="384" height="30" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="44" y="126" font-size="12.5" fill="#1f2937">② 서비싱 스택 업데이트 확인</text>
+
+    <rect x="28" y="142" width="384" height="30" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="44" y="162" font-size="12.5" fill="#1f2937">③ 문제 해결사 (기타 문제 해결 도구)</text>
+
+    <rect x="28" y="178" width="384" height="30" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="44" y="198" font-size="12.5" fill="#1f2937">④ 디스크 공간 16/20GB · 날짜·시간 자동</text>
+
+    <rect x="28" y="214" width="384" height="44" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2.5"/>
+    <text x="44" y="234" font-size="12.5" font-weight="700" fill="#1f2937">⑤ DISM 먼저 → SFC 나중</text>
+    <text x="44" y="252" font-size="11.5" fill="#6b7280">/Online /Cleanup-image /Restorehealth → sfc /scannow</text>
+
+    <rect x="28" y="264" width="384" height="44" rx="4" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="44" y="284" font-size="12.5" font-weight="700" fill="#1f2937">⑥ 구성 요소 리셋 — 서비스 세 개</text>
+    <text x="44" y="302" font-size="11.5" fill="#6b7280">bits · wuauserv · cryptsvc</text>
+
+    <rect x="28" y="314" width="384" height="44" rx="4" fill="#ffffff" stroke="#b91c1c" stroke-width="3"/>
+    <text x="44" y="334" font-size="12.5" font-weight="700" fill="#b91c1c">⑦ 최후 수단 — 폴더 이름 변경</text>
+    <text x="44" y="352" font-size="11.5" fill="#1f2937">DataStore / Download / catroot2 → .bak</text>
+
+    <!-- right column -->
+    <rect x="428" y="70" width="344" height="288" rx="6" fill="#ffffff" stroke="#b91c1c" stroke-width="2.5"/>
+    <text x="446" y="96" font-size="13" font-weight="700" fill="#b91c1c">순서가 거꾸로인 조치들</text>
+    <text x="446" y="124" font-size="12.5" fill="#1f2937">1. SoftwareDistribution 폴더부터 삭제</text>
+    <text x="446" y="142" font-size="11.5" fill="#6b7280">문서는 다른 단계를 다 해 본 뒤에만 하라고 명시</text>
+    <text x="446" y="170" font-size="12.5" fill="#1f2937">2. 폴더 전체를 <tspan font-family="monospace">.old</tspan> 로 rename</text>
+    <text x="446" y="188" font-size="11.5" fill="#6b7280">서버 문서는 하위 DataStore·Download만, 확장자는 .bak</text>
+    <text x="446" y="216" font-size="12.5" fill="#1f2937">3. 서비스 네 개 중지 (msiserver 포함)</text>
+    <text x="446" y="234" font-size="11.5" fill="#6b7280">msiserver 는 마이크로소프트 리셋 문서에 없습니다</text>
+    <text x="446" y="262" font-size="12.5" fill="#1f2937">4. SFC 먼저, DISM 나중</text>
+    <text x="446" y="280" font-size="11.5" fill="#6b7280">문서 번호 순서는 DISM 이 먼저입니다</text>
+    <text x="446" y="312" font-size="12" font-weight="700" fill="#b91c1c">순서를 바꾸면 고쳐질 것도 안 고쳐집니다</text>
+    <text x="446" y="336" font-size="11.5" fill="#6b7280">저장소를 먼저 고쳐야 SFC가 가져올 자리가 생깁니다</text>
+
+    <rect x="28" y="372" width="744" height="56" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <text x="48" y="396" font-size="13" font-weight="700" fill="#1f2937">코드가 말해 주는 것 — 0x80070002 = ERROR_FILE_NOT_FOUND</text>
+    <text x="48" y="418" font-size="12" fill="#6b7280">네트워크도 권한도 아닙니다. 업데이트에 필요한 파일이 있어야 할 자리에 없다는 신호입니다.</text>
+  </g>
+</svg>
